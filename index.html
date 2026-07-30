@@ -1,0 +1,3569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    PORTFOLIO OWNER: UPDATE THESE ITEMS
+    1. Profile photograph
+    2. Email address
+    3. LinkedIn URL
+    4. Instagram URL
+    5. Facebook URL
+    6. Project links
+    7. Canonical website URL
+    8. Social-sharing preview image
+  -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahsanul Resam | Aeronautical Engineer and UAV Autopilot Developer</title>
+  <meta name="description" content="Portfolio of Ahsanul Resam, an Aeronautical Engineering graduate specialising in fixed-wing UAV control, flight dynamics, aircraft design, MATLAB/Simulink, PX4, and autonomous flight systems.">
+  <meta name="author" content="Ahsanul Resam">
+  <meta name="theme-color" content="#061426">
+
+  <meta property="og:title" content="Ahsanul Resam | Aeronautical Engineer and UAV Autopilot Developer">
+  <meta property="og:description" content="Aeronautical Engineering graduate specialising in fixed-wing UAV control, flight dynamics, aircraft design, MATLAB/Simulink, PX4, and autonomous flight systems.">
+  <meta property="og:type" content="website">
+  <!-- Replace with the final social-sharing preview image URL -->
+  <meta property="og:image" content="https://example.com/ahsanul-resam-portfolio-preview.jpg">
+
+  <!-- Replace with the final live website URL -->
+  <link rel="canonical" href="https://example.com/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahsanul Resam",
+    "jobTitle": "Aeronautical Engineering Graduate and UAV Autopilot Developer",
+    "description": "Aeronautical Engineering graduate specialising in fixed-wing UAV control, flight dynamics, aircraft design, MATLAB/Simulink, PX4, and autonomous flight systems.",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Aviation and Aerospace University Bangladesh"
+    },
+    "knowsAbout": [
+      "Aeronautical Engineering",
+      "Fixed-Wing UAVs",
+      "Flight Dynamics",
+      "Aircraft Stability and Control",
+      "MATLAB",
+      "Simulink",
+      "PX4",
+      "Pixhawk",
+      "Autonomous Flight Systems"
+    ],
+    "url": "https://example.com/"
+  }
+  </script>
+
+  <style>
+    /* =========================================================
+       DESIGN TOKENS
+    ========================================================= */
+    :root {
+      --navy-950: #030a14;
+      --navy-900: #061426;
+      --navy-850: #071a31;
+      --navy-800: #09203f;
+      --blue-600: #1677ff;
+      --blue-500: #2490ff;
+      --blue-400: #38a7ff;
+      --blue-300: #76c6ff;
+      --blue-200: #b9e3ff;
+      --blue-100: #d9efff;
+      --blue-050: #eaf6ff;
+      --white: #ffffff;
+      --text: #eef7ff;
+      --muted: #afc4da;
+      --muted-2: #7f9bb8;
+      --success: #57d6a1;
+      --warning: #ffd477;
+      --danger: #ff8d8d;
+
+      --bg: var(--navy-900);
+      --bg-soft: var(--navy-850);
+      --surface: rgba(12, 35, 65, 0.78);
+      --surface-strong: rgba(15, 44, 81, 0.92);
+      --surface-light: rgba(255, 255, 255, 0.055);
+      --border: rgba(185, 227, 255, 0.16);
+      --border-strong: rgba(56, 167, 255, 0.35);
+
+      --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.18);
+      --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.28);
+      --shadow-blue: 0 18px 60px rgba(22, 119, 255, 0.18);
+
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 28px;
+      --radius-pill: 999px;
+
+      --container: 1180px;
+      --header-height: 76px;
+
+      --section-space: clamp(5.25rem, 9vw, 8.5rem);
+      --transition-fast: 180ms ease;
+      --transition: 320ms cubic-bezier(.2, .8, .2, 1);
+    }
+
+    /* =========================================================
+       RESET AND BASE
+    ========================================================= */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + 24px);
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 12%, rgba(22, 119, 255, 0.15), transparent 28rem),
+        radial-gradient(circle at 88% 18%, rgba(56, 167, 255, 0.1), transparent 24rem),
+        linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 12%, #071a31 52%, var(--navy-900) 100%);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    ::selection {
+      color: var(--white);
+      background: rgba(22, 119, 255, 0.72);
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1.14;
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    section {
+      position: relative;
+      padding-block: var(--section-space);
+    }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--container));
+      margin-inline: auto;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .section-heading.centered {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1rem;
+      color: var(--blue-300);
+      font-size: 0.79rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 30px;
+      height: 1px;
+      content: "";
+      background: linear-gradient(90deg, transparent, var(--blue-400));
+    }
+
+    .section-title {
+      margin-bottom: 1rem;
+      color: var(--white);
+      font-size: clamp(2rem, 5vw, 3.9rem);
+    }
+
+    .section-subtitle {
+      max-width: 690px;
+      margin-bottom: 0;
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+    }
+
+    .surface {
+      border: 1px solid var(--border);
+      background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+      box-shadow: var(--shadow-sm);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 9999;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      color: var(--navy-900);
+      background: var(--white);
+      transform: translateY(-160%);
+      transition: transform var(--transition-fast);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--blue-300);
+      outline-offset: 4px;
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.82rem 1.15rem;
+      border: 1px solid transparent;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      font-weight: 800;
+      transition:
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: var(--white);
+      background: linear-gradient(135deg, var(--blue-600), var(--blue-400));
+      box-shadow: 0 10px 32px rgba(22, 119, 255, 0.25);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 14px 38px rgba(22, 119, 255, 0.38);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      border-color: var(--border-strong);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--blue-300);
+      background: rgba(56, 167, 255, 0.1);
+    }
+
+    .icon {
+      width: 1.1rem;
+      height: 1.1rem;
+      flex: 0 0 auto;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.4rem 0.7rem;
+      border: 1px solid rgba(185, 227, 255, 0.13);
+      border-radius: var(--radius-pill);
+      color: var(--blue-100);
+      background: rgba(56, 167, 255, 0.075);
+      font-size: 0.79rem;
+      font-weight: 700;
+    }
+
+    /* =========================================================
+       HEADER AND NAVIGATION
+    ========================================================= */
+    .site-header {
+      position: fixed;
+      z-index: 1000;
+      inset: 0 0 auto;
+      height: var(--header-height);
+      border-bottom: 1px solid transparent;
+      background: rgba(3, 10, 20, 0.52);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      transition:
+        background-color var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+    }
+
+    .site-header.scrolled {
+      border-color: var(--border);
+      background: rgba(3, 10, 20, 0.88);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.24);
+    }
+
+    .nav-wrap {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      position: relative;
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid var(--border-strong);
+      border-radius: 13px;
+      color: var(--white);
+      background: linear-gradient(145deg, rgba(22, 119, 255, 0.92), rgba(56, 167, 255, 0.25));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22);
+    }
+
+    .brand-mark::after {
+      position: absolute;
+      width: 48px;
+      height: 1px;
+      content: "";
+      background: rgba(255,255,255,0.5);
+      transform: rotate(-35deg);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .brand-text small {
+      color: var(--muted-2);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.65rem 0.72rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition: color var(--transition-fast);
+    }
+
+    .nav-link::after {
+      position: absolute;
+      right: 0.7rem;
+      bottom: 0.32rem;
+      left: 0.7rem;
+      height: 2px;
+      border-radius: 2px;
+      content: "";
+      background: var(--blue-400);
+      opacity: 0;
+      transform: scaleX(0);
+      transition: opacity var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--white);
+    }
+
+    .nav-link.active::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    .nav-cta {
+      margin-left: 0.35rem;
+      padding-inline: 1rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      color: var(--white);
+      background: rgba(255,255,255,0.05);
+      cursor: pointer;
+    }
+
+    .menu-toggle svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* =========================================================
+       HERO SECTION
+    ========================================================= */
+    .hero {
+      display: grid;
+      min-height: 100svh;
+      align-items: center;
+      padding-top: calc(var(--header-height) + 3rem);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      content: "";
+      opacity: 0.3;
+      background-image:
+        linear-gradient(rgba(185,227,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(185,227,255,0.05) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+    }
+
+    .hero-orbit {
+      position: absolute;
+      z-index: -1;
+      top: 8%;
+      right: -10rem;
+      width: min(60vw, 850px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(56,167,255,0.11);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 70px rgba(56,167,255,0.025),
+        0 0 0 140px rgba(56,167,255,0.018);
+      animation: orbitPulse 8s ease-in-out infinite;
+    }
+
+    @keyframes orbitPulse {
+      0%, 100% { transform: scale(1); opacity: 0.65; }
+      50% { transform: scale(1.025); opacity: 1; }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+      align-items: center;
+      gap: clamp(2.5rem, 7vw, 7rem);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+      padding: 0.48rem 0.74rem;
+      border: 1px solid rgba(56,167,255,0.22);
+      border-radius: var(--radius-pill);
+      color: var(--blue-200);
+      background: rgba(22,119,255,0.08);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hero-kicker-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 5px rgba(87,214,161,0.11);
+    }
+
+    .hero h1 {
+      margin-bottom: 0.45rem;
+      color: var(--white);
+      font-size: clamp(3.15rem, 8vw, 6.8rem);
+      letter-spacing: -0.065em;
+    }
+
+    .hero-title {
+      max-width: 790px;
+      margin-bottom: 1.1rem;
+      color: var(--blue-200);
+      font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+      font-weight: 700;
+    }
+
+    .hero-tagline {
+      max-width: 690px;
+      margin-bottom: 1.8rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.5vw, 1.18rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 1.65rem;
+    }
+
+    .availability {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .availability::before {
+      width: 9px;
+      height: 9px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      content: "";
+      background: var(--success);
+      box-shadow: 0 0 0 5px rgba(87,214,161,0.11);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+    }
+
+    .flight-console {
+      position: absolute;
+      inset: 4% 0 0;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      background:
+        radial-gradient(circle at 75% 20%, rgba(56,167,255,0.23), transparent 28%),
+        linear-gradient(145deg, rgba(12,38,72,0.95), rgba(3,10,20,0.78));
+      box-shadow: var(--shadow-md), var(--shadow-blue);
+    }
+
+    .flight-console::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      opacity: 0.52;
+      background-image:
+        linear-gradient(rgba(185,227,255,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(185,227,255,0.06) 1px, transparent 1px);
+      background-size: 34px 34px;
+    }
+
+    .console-topbar {
+      position: absolute;
+      z-index: 3;
+      top: 1.25rem;
+      right: 1.25rem;
+      left: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--muted-2);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .console-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .console-status span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--success);
+    }
+
+    .aircraft-illustration {
+      position: absolute;
+      z-index: 2;
+      top: 17%;
+      left: 7%;
+      width: 87%;
+      filter: drop-shadow(0 20px 32px rgba(0,0,0,0.4));
+    }
+
+    .flight-path {
+      stroke-dasharray: 9 12;
+      animation: dash 13s linear infinite;
+    }
+
+    @keyframes dash {
+      to { stroke-dashoffset: -250; }
+    }
+
+    .telemetry-grid {
+      position: absolute;
+      z-index: 3;
+      right: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+
+    .telemetry-card {
+      padding: 0.9rem;
+      border: 1px solid rgba(185,227,255,0.12);
+      border-radius: 15px;
+      background: rgba(3,10,20,0.62);
+      backdrop-filter: blur(12px);
+    }
+
+    .telemetry-card span {
+      display: block;
+      color: var(--muted-2);
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .telemetry-card strong {
+      display: block;
+      margin-top: 0.18rem;
+      color: var(--white);
+      font-size: 1rem;
+    }
+
+    .floating-chip {
+      position: absolute;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      color: var(--blue-100);
+      background: rgba(6,20,38,0.88);
+      box-shadow: var(--shadow-sm);
+      font-size: 0.78rem;
+      font-weight: 800;
+      animation: floatChip 5s ease-in-out infinite;
+    }
+
+    .floating-chip svg {
+      width: 18px;
+      height: 18px;
+      color: var(--blue-400);
+    }
+
+    .chip-one {
+      top: 2%;
+      right: 4%;
+    }
+
+    .chip-two {
+      bottom: 15%;
+      left: -8%;
+      animation-delay: -2.2s;
+    }
+
+    @keyframes floatChip {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* =========================================================
+       WHO I AM SECTION
+    ========================================================= */
+    .about {
+      background:
+        linear-gradient(180deg, transparent, rgba(255,255,255,0.018), transparent);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.7fr);
+      align-items: start;
+      gap: clamp(2rem, 6vw, 6rem);
+    }
+
+    .about-copy p {
+      font-size: 1.02rem;
+    }
+
+    .about-copy p + p {
+      margin-top: 1rem;
+    }
+
+    .profile-stage {
+      position: sticky;
+      top: calc(var(--header-height) + 2rem);
+      min-height: 610px;
+    }
+
+    .profile-backdrop {
+      position: absolute;
+      inset: 5% 4% 0;
+      border: 1px solid rgba(56,167,255,0.12);
+      border-radius: 38px;
+      background:
+        linear-gradient(145deg, rgba(22,119,255,0.16), rgba(56,167,255,0.025));
+      transform: rotate(4deg);
+    }
+
+    .profile-backdrop::before {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      content: "";
+      background-image:
+        radial-gradient(circle, rgba(185,227,255,0.18) 1px, transparent 1.5px);
+      background-size: 20px 20px;
+      mask-image: linear-gradient(135deg, black, transparent 75%);
+    }
+
+    .profile-frame {
+      position: relative;
+      z-index: 2;
+      min-height: 560px;
+      overflow: hidden;
+      border: 1px solid var(--border-strong);
+      border-radius: 32px;
+      background: linear-gradient(160deg, rgba(15,50,91,0.96), rgba(4,13,25,0.98));
+      box-shadow: var(--shadow-md), var(--shadow-blue);
+    }
+
+    .profile-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      object-fit: cover;
+    }
+
+    .profile-label {
+      position: absolute;
+      z-index: 4;
+      right: 1.2rem;
+      bottom: 1.2rem;
+      left: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(255,255,255,0.11);
+      border-radius: 16px;
+      background: rgba(3,10,20,0.78);
+      backdrop-filter: blur(14px);
+    }
+
+    .profile-label strong {
+      display: block;
+      color: var(--white);
+    }
+
+    .profile-label span {
+      color: var(--blue-200);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .profile-label-icon {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--blue-200);
+      background: rgba(22,119,255,0.16);
+    }
+
+    .profile-label-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 2rem;
+    }
+
+    .info-card {
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.035);
+    }
+
+    .info-card span {
+      display: block;
+      margin-bottom: 0.2rem;
+      color: var(--muted-2);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .info-card strong {
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .skills-wrap {
+      margin-top: 4.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-group {
+      padding: clamp(1.15rem, 2.5vw, 1.6rem);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.022));
+      transition: transform var(--transition), border-color var(--transition);
+    }
+
+    .skill-group:hover {
+      border-color: var(--border-strong);
+      transform: translateY(-4px);
+    }
+
+    .skill-group h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 1.1rem;
+      color: var(--white);
+      font-size: 1.03rem;
+    }
+
+    .skill-group h3 svg {
+      width: 22px;
+      height: 22px;
+      color: var(--blue-400);
+    }
+
+    /* =========================================================
+       JOURNEY SECTION
+    ========================================================= */
+    .journey {
+      overflow: hidden;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1040px;
+      margin-inline: auto;
+    }
+
+    .timeline::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+      content: "";
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--blue-400) 8%,
+        rgba(56,167,255,0.38) 90%,
+        transparent
+      );
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 80px 1fr;
+      align-items: center;
+      margin-bottom: 1.75rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-card {
+      grid-column: 1;
+    }
+
+    .timeline-item:nth-child(even) .timeline-card {
+      grid-column: 3;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-card::after {
+      right: -10px;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent rgba(185,227,255,0.14);
+    }
+
+    .timeline-item:nth-child(even) .timeline-card::after {
+      left: -10px;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent rgba(185,227,255,0.14) transparent transparent;
+    }
+
+    .timeline-card {
+      position: relative;
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+      box-shadow: var(--shadow-sm);
+    }
+
+    .timeline-card::after {
+      position: absolute;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      content: "";
+      transform: translateY(-50%);
+    }
+
+    .timeline-card h3 {
+      margin-bottom: 0.6rem;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+
+    .timeline-card p {
+      margin-bottom: 0;
+      font-size: 0.94rem;
+    }
+
+    .timeline-node {
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border: 5px solid var(--navy-900);
+      border-radius: 50%;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--blue-600), var(--blue-400));
+      box-shadow: 0 0 0 1px rgba(56,167,255,0.42), 0 8px 28px rgba(22,119,255,0.35);
+      transform: translateX(-50%);
+    }
+
+    .timeline-node svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .timeline-index {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      color: var(--blue-300);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* =========================================================
+       PROJECTS SECTION
+    ========================================================= */
+    .projects {
+      background:
+        linear-gradient(180deg, transparent, rgba(22,119,255,0.045), transparent);
+    }
+
+    .project-list {
+      display: grid;
+      gap: 1.3rem;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(145deg, rgba(13,38,70,0.95), rgba(5,16,30,0.96));
+      box-shadow: var(--shadow-sm);
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .project-card:hover {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-md), var(--shadow-blue);
+      transform: translateY(-5px);
+    }
+
+    .project-content {
+      padding: clamp(1.35rem, 3.5vw, 2.25rem);
+    }
+
+    .project-topline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.65rem;
+      border: 1px solid rgba(87,214,161,0.2);
+      border-radius: var(--radius-pill);
+      color: #b9f5dc;
+      background: rgba(87,214,161,0.08);
+      font-size: 0.73rem;
+      font-weight: 850;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .project-status::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      content: "";
+      background: var(--success);
+    }
+
+    .project-number {
+      color: var(--muted-2);
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.9rem;
+      color: var(--white);
+      font-size: clamp(1.45rem, 3vw, 2.15rem);
+    }
+
+    .project-overview {
+      margin-bottom: 1.4rem;
+      font-size: 1rem;
+    }
+
+    .project-columns {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 1.25rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .project-block h4 {
+      margin-bottom: 0.7rem;
+      color: var(--blue-200);
+      font-size: 0.86rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 0.48rem;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 1.3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .check-list li::before {
+      position: absolute;
+      top: 0.63em;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      content: "";
+      background: var(--blue-400);
+      box-shadow: 0 0 0 4px rgba(56,167,255,0.09);
+    }
+
+    .outcome-card {
+      padding: 1rem;
+      border: 1px solid rgba(56,167,255,0.18);
+      border-radius: var(--radius-sm);
+      background: rgba(22,119,255,0.07);
+    }
+
+    .outcome-card p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+    }
+
+    .project-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1.3rem;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--blue-200);
+      font-weight: 800;
+      transition: color var(--transition-fast), gap var(--transition-fast);
+    }
+
+    .project-link:hover {
+      gap: 0.72rem;
+      color: var(--white);
+    }
+
+    .project-visual {
+      position: relative;
+      display: grid;
+      min-height: 420px;
+      place-items: center;
+      overflow: hidden;
+      border-left: 1px solid var(--border);
+      background:
+        radial-gradient(circle at 68% 23%, rgba(56,167,255,0.25), transparent 29%),
+        linear-gradient(145deg, rgba(16,53,97,0.75), rgba(3,11,22,0.95));
+    }
+
+    .project-visual::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      opacity: 0.46;
+      background-image:
+        linear-gradient(rgba(185,227,255,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(185,227,255,0.06) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .project-visual > svg {
+      position: relative;
+      z-index: 2;
+      width: min(80%, 340px);
+    }
+
+    .result-grid {
+      position: absolute;
+      z-index: 4;
+      right: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.65rem;
+    }
+
+    .result-card {
+      padding: 0.85rem;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 13px;
+      background: rgba(3,10,20,0.78);
+      backdrop-filter: blur(10px);
+    }
+
+    .result-card span {
+      display: block;
+      color: var(--muted-2);
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .result-card strong {
+      display: block;
+      margin-top: 0.18rem;
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .future-project {
+      border-style: dashed;
+      background:
+        linear-gradient(145deg, rgba(22,119,255,0.07), rgba(255,255,255,0.025));
+    }
+
+    .future-project .project-visual {
+      min-height: 350px;
+    }
+
+    /* =========================================================
+       ACHIEVEMENTS SECTION
+    ========================================================= */
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .achievement-card {
+      grid-column: span 2;
+      min-height: 220px;
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), border-color var(--transition);
+    }
+
+    .achievement-card:nth-child(4),
+    .achievement-card:nth-child(5) {
+      grid-column: span 3;
+    }
+
+    .achievement-card:hover {
+      border-color: var(--border-strong);
+      transform: translateY(-4px);
+    }
+
+    .achievement-icon {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 1.2rem;
+      place-items: center;
+      border: 1px solid rgba(56,167,255,0.18);
+      border-radius: 15px;
+      color: var(--blue-200);
+      background: rgba(22,119,255,0.11);
+    }
+
+    .achievement-icon svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    .achievement-card h3 {
+      margin-bottom: 0.65rem;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+
+    .achievement-card p {
+      margin-bottom: 0;
+      font-size: 0.92rem;
+    }
+
+    .metrics-band {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 2rem;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--border);
+    }
+
+    .metric-item {
+      display: grid;
+      min-height: 130px;
+      align-content: center;
+      padding: 1rem;
+      text-align: center;
+      background: rgba(8, 25, 47, 0.96);
+    }
+
+    .metric-item strong {
+      color: var(--white);
+      font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+    }
+
+    .metric-item span {
+      margin-top: 0.3rem;
+      color: var(--muted-2);
+      font-size: 0.76rem;
+      font-weight: 750;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    /* =========================================================
+       ENGINEERING PHILOSOPHY
+    ========================================================= */
+    .philosophy {
+      padding-block: clamp(4.5rem, 8vw, 7rem);
+    }
+
+    .quote-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(2rem, 6vw, 5rem);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(circle at 80% 10%, rgba(56,167,255,0.18), transparent 28%),
+        linear-gradient(135deg, rgba(10,43,80,0.96), rgba(4,14,27,0.98));
+      box-shadow: var(--shadow-md);
+    }
+
+    .quote-card blockquote {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(1.55rem, 4vw, 3.15rem);
+      font-weight: 720;
+      line-height: 1.3;
+      letter-spacing: -0.035em;
+    }
+
+    .quote-card figcaption {
+      position: relative;
+      z-index: 2;
+      margin-top: 1.6rem;
+      color: var(--blue-200);
+      font-weight: 850;
+    }
+
+    .quote-card > svg {
+      position: absolute;
+      right: -3%;
+      bottom: -10%;
+      width: min(52%, 550px);
+      opacity: 0.22;
+    }
+
+    /* =========================================================
+       CONTACT SECTION
+    ========================================================= */
+    .contact {
+      background:
+        linear-gradient(180deg, transparent, rgba(22,119,255,0.05), transparent);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(1.5rem, 5vw, 4.5rem);
+      align-items: start;
+    }
+
+    .social-grid {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .social-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.035);
+      transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast),
+        background-color var(--transition-fast);
+    }
+
+    .social-card:hover {
+      border-color: var(--border-strong);
+      background: rgba(56,167,255,0.07);
+      transform: translateX(4px);
+    }
+
+    .social-icon {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--blue-200);
+      background: rgba(22,119,255,0.13);
+    }
+
+    .social-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .social-card strong {
+      display: block;
+      color: var(--white);
+    }
+
+    .social-card span {
+      display: block;
+      color: var(--muted-2);
+      font-size: 0.79rem;
+      overflow-wrap: anywhere;
+    }
+
+    .social-arrow {
+      width: 18px;
+      height: 18px;
+      margin-left: auto;
+      color: var(--blue-400);
+    }
+
+    .contact-form {
+      padding: clamp(1.2rem, 3vw, 2rem);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+      box-shadow: var(--shadow-sm);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .form-field {
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .form-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-field label {
+      color: var(--blue-100);
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .form-field input,
+    .form-field textarea {
+      width: 100%;
+      border: 1px solid rgba(185,227,255,0.16);
+      border-radius: 13px;
+      color: var(--white);
+      background: rgba(3,10,20,0.55);
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .form-field input {
+      min-height: 49px;
+      padding: 0 0.9rem;
+    }
+
+    .form-field textarea {
+      min-height: 155px;
+      padding: 0.9rem;
+      resize: vertical;
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: #708aa5;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      border-color: var(--blue-400);
+      outline: 0;
+      box-shadow: 0 0 0 4px rgba(56,167,255,0.1);
+    }
+
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .form-notice {
+      min-height: 1.6em;
+      margin: 0;
+      color: var(--blue-200);
+      font-size: 0.84rem;
+    }
+
+    .form-notice.error {
+      color: var(--danger);
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+    .site-footer {
+      position: relative;
+      padding-block: 3rem 1.3rem;
+      border-top: 1px solid var(--border);
+      background: rgba(3,10,20,0.72);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr 0.7fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .footer-brand p {
+      max-width: 430px;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      font-size: 0.92rem;
+    }
+
+    .footer-group h3 {
+      margin-bottom: 0.85rem;
+      color: var(--white);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 0.48rem;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: color var(--transition-fast);
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .footer-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .footer-social a {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--blue-200);
+      background: rgba(255,255,255,0.04);
+      transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast),
+        color var(--transition-fast);
+    }
+
+    .footer-social a:hover {
+      border-color: var(--border-strong);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    .footer-social svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(185,227,255,0.09);
+      color: var(--muted-2);
+      font-size: 0.82rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      z-index: 800;
+      right: 1.2rem;
+      bottom: 1.2rem;
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border: 1px solid var(--border-strong);
+      border-radius: 15px;
+      color: var(--white);
+      background: rgba(6,20,38,0.92);
+      box-shadow: var(--shadow-md);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px);
+      transition:
+        opacity var(--transition-fast),
+        transform var(--transition-fast),
+        background-color var(--transition-fast);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      background: var(--blue-600);
+    }
+
+    .back-to-top svg {
+      width: 21px;
+      height: 21px;
+    }
+
+    /* =========================================================
+       REVEAL ANIMATIONS
+    ========================================================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition:
+        opacity 700ms ease,
+        transform 700ms cubic-bezier(.2,.8,.2,1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 90ms; }
+    .reveal-delay-2 { transition-delay: 180ms; }
+    .reveal-delay-3 { transition-delay: 270ms; }
+
+    /* =========================================================
+       RESPONSIVE STYLES
+    ========================================================= */
+    @media (max-width: 1040px) {
+      .nav-link {
+        padding-inline: 0.52rem;
+        font-size: 0.82rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 2.2rem;
+      }
+
+      .hero-visual {
+        min-height: 510px;
+      }
+
+      .project-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+      :root {
+        --header-height: 70px;
+      }
+
+      .menu-toggle {
+        display: grid;
+      }
+
+      .site-nav {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        left: 0;
+        max-height: calc(100svh - var(--header-height));
+        overflow-y: auto;
+        border-bottom: 1px solid var(--border);
+        background: rgba(3,10,20,0.97);
+        box-shadow: var(--shadow-md);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-14px);
+        transition: opacity var(--transition-fast), transform var(--transition-fast);
+      }
+
+      .site-nav.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .nav-list {
+        width: min(calc(100% - 2rem), var(--container));
+        margin-inline: auto;
+        padding: 1rem 0 1.3rem;
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .nav-link {
+        width: 100%;
+        min-height: 48px;
+        padding: 0.75rem 0.6rem;
+        font-size: 0.96rem;
+      }
+
+      .nav-link::after {
+        right: auto;
+        bottom: 50%;
+        left: 0;
+        width: 3px;
+        height: 22px;
+        transform: translateY(50%) scaleY(0);
+      }
+
+      .nav-link.active::after {
+        transform: translateY(50%) scaleY(1);
+      }
+
+      .nav-cta {
+        margin: 0.5rem 0 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: calc(var(--header-height) + 5.2rem);
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        text-align: center;
+      }
+
+      .hero-title,
+      .hero-tagline {
+        margin-inline: auto;
+      }
+
+      .hero-actions,
+      .availability {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        width: min(100%, 650px);
+        min-height: 530px;
+        margin-inline: auto;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-stage {
+        position: relative;
+        top: 0;
+        width: min(100%, 480px);
+        min-height: 570px;
+        margin-inline: auto;
+        grid-row: 2;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline::before {
+        left: 24px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 64px 1fr;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-card,
+      .timeline-item:nth-child(even) .timeline-card {
+        grid-column: 2;
+      }
+
+      .timeline-node {
+        left: 24px;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-card::after,
+      .timeline-item:nth-child(even) .timeline-card::after {
+        top: 24px;
+        right: auto;
+        left: -10px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgba(185,227,255,0.14) transparent transparent;
+        transform: none;
+      }
+
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+
+      .project-visual {
+        min-height: 370px;
+        border-top: 1px solid var(--border);
+        border-left: 0;
+      }
+
+      .achievement-card {
+        grid-column: span 3;
+      }
+
+      .achievement-card:nth-child(5) {
+        grid-column: 2 / span 4;
+      }
+
+      .metrics-band {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+
+      .footer-social-wrap {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(calc(100% - 1.25rem), var(--container));
+      }
+
+      section {
+        padding-block: 4.8rem;
+      }
+
+      .brand-text {
+        display: none;
+      }
+
+      .hero {
+        padding-top: calc(var(--header-height) + 4.5rem);
+      }
+
+      .hero h1 {
+        font-size: clamp(3rem, 16vw, 4.8rem);
+      }
+
+      .hero-kicker {
+        line-height: 1.4;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 430px;
+      }
+
+      .flight-console {
+        border-radius: 24px;
+      }
+
+      .console-topbar {
+        top: 0.9rem;
+        right: 0.9rem;
+        left: 0.9rem;
+      }
+
+      .aircraft-illustration {
+        top: 20%;
+        left: 4%;
+        width: 92%;
+      }
+
+      .telemetry-grid {
+        grid-template-columns: 1fr;
+        right: 0.75rem;
+        bottom: 0.75rem;
+        left: 0.75rem;
+        gap: 0.45rem;
+      }
+
+      .telemetry-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.62rem 0.75rem;
+      }
+
+      .telemetry-card strong {
+        margin-top: 0;
+      }
+
+      .floating-chip {
+        display: none;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-stage {
+        min-height: 510px;
+      }
+
+      .profile-frame,
+      .profile-placeholder {
+        min-height: 500px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 52px 1fr;
+      }
+
+      .timeline::before,
+      .timeline-node {
+        left: 20px;
+      }
+
+      .timeline-node {
+        width: 42px;
+        height: 42px;
+      }
+
+      .project-content {
+        padding: 1.15rem;
+      }
+
+      .project-visual {
+        min-height: 315px;
+      }
+
+      .result-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .achievement-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .achievement-card,
+      .achievement-card:nth-child(4),
+      .achievement-card:nth-child(5) {
+        grid-column: 1;
+      }
+
+      .metrics-band {
+        grid-template-columns: 1fr;
+      }
+
+      .metric-item {
+        min-height: 105px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-field.full {
+        grid-column: auto;
+      }
+
+      .form-actions .btn {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-social-wrap {
+        grid-column: auto;
+      }
+
+      .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .back-to-top {
+        right: 0.8rem;
+        bottom: 0.8rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero-visual {
+        min-height: 390px;
+      }
+
+      .profile-stage {
+        min-height: 470px;
+      }
+
+      .profile-frame,
+      .profile-placeholder {
+        min-height: 460px;
+      }
+
+      .profile-label {
+        right: 0.75rem;
+        bottom: 0.75rem;
+        left: 0.75rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =======================================================
+       HEADER AND NAVIGATION
+  ======================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Ahsanul Resam portfolio home">
+        <span class="brand-mark" aria-hidden="true">AR</span>
+        <span class="brand-text">
+          Ahsanul Resam
+          <small>Aeronautical Engineer</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="site-nav"
+        aria-expanded="false"
+      >
+        <svg id="menu-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">Who I Am</a></li>
+          <li><a class="nav-link" href="#journey">Journey</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li>
+            <a class="btn btn-primary nav-cta" href="#contact">Let’s Connect</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-orbit" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker reveal">
+            <span class="hero-kicker-dot" aria-hidden="true"></span>
+            Aeronautical Engineer • UAV Control Systems • Flight Dynamics
+          </div>
+
+          <h1 id="hero-heading" class="reveal reveal-delay-1">Ahsanul Resam</h1>
+
+          <p class="hero-title reveal reveal-delay-1">
+            Aeronautical Engineering Graduate and UAV Autopilot Developer
+          </p>
+
+          <p class="hero-tagline reveal reveal-delay-2">
+            Turning aerodynamic theory, flight dynamics, and control-system design
+            into practical autonomous aircraft solutions.
+          </p>
+
+          <div class="hero-actions reveal reveal-delay-2">
+            <a class="btn btn-primary" href="#projects">
+              Explore My Projects
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a class="btn btn-secondary" href="#contact">
+              Contact Me
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v12H4zM4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <p class="availability reveal reveal-delay-3">
+            Open to engineering, research, and postgraduate opportunities
+          </p>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-2" aria-label="Technical fixed-wing UAV flight illustration">
+          <div class="flight-console">
+            <div class="console-topbar" aria-hidden="true">
+              <span>Autonomous Flight System</span>
+              <span class="console-status"><span></span>Nominal</span>
+            </div>
+
+            <svg class="aircraft-illustration" viewBox="0 0 520 430" role="img" aria-label="Fixed-wing aircraft following an autonomous waypoint path">
+              <defs>
+                <linearGradient id="aircraftGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#EAF6FF"/>
+                  <stop offset="0.55" stop-color="#76C6FF"/>
+                  <stop offset="1" stop-color="#1677FF"/>
+                </linearGradient>
+                <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0" stop-color="#38A7FF" stop-opacity=".24"/>
+                  <stop offset="1" stop-color="#38A7FF" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <circle cx="266" cy="212" r="162" fill="url(#radarGlow)"/>
+              <circle cx="266" cy="212" r="112" fill="none" stroke="#B9E3FF" stroke-opacity=".12"/>
+              <circle cx="266" cy="212" r="72" fill="none" stroke="#B9E3FF" stroke-opacity=".11"/>
+              <path d="M92 330C157 290 184 338 243 272C308 199 349 150 445 112" fill="none" stroke="#38A7FF" stroke-width="3" stroke-linecap="round" class="flight-path"/>
+              <circle cx="92" cy="330" r="7" fill="#57D6A1"/>
+              <circle cx="243" cy="272" r="7" fill="#38A7FF"/>
+              <circle cx="445" cy="112" r="7" fill="#FFD477"/>
+              <circle cx="92" cy="330" r="15" fill="none" stroke="#57D6A1" stroke-opacity=".3"/>
+              <circle cx="243" cy="272" r="15" fill="none" stroke="#38A7FF" stroke-opacity=".3"/>
+              <circle cx="445" cy="112" r="15" fill="none" stroke="#FFD477" stroke-opacity=".3"/>
+
+              <g transform="translate(265 210) rotate(-22)">
+                <path d="M0-132c8 0 13 8 13 19v75l94 58c7 4 10 10 8 17l-3 11-99-30v51l31 22v13L0 92l-44 12V91l31-22V18l-99 30-3-11c-2-7 1-13 8-17l94-58v-75c0-11 5-19 13-19Z" fill="url(#aircraftGradient)"/>
+                <path d="M0-116v190" stroke="#FFFFFF" stroke-opacity=".34" stroke-width="2"/>
+                <path d="M-81 26h162" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="2"/>
+              </g>
+
+              <path d="M48 104h96M48 118h60M385 330h78M410 344h53" stroke="#B9E3FF" stroke-opacity=".2" stroke-width="2" stroke-linecap="round"/>
+              <text x="49" y="92" fill="#AFC4DA" font-size="12" font-family="system-ui">NAV / CONTROL</text>
+              <text x="385" y="317" fill="#AFC4DA" font-size="12" font-family="system-ui">WAYPOINT TRACK</text>
+            </svg>
+
+            <div class="telemetry-grid" aria-hidden="true">
+              <div class="telemetry-card">
+                <span>Airspeed</span>
+                <strong>25 m/s</strong>
+              </div>
+              <div class="telemetry-card">
+                <span>Control</span>
+                <strong>PID · LQR · LQI</strong>
+              </div>
+              <div class="telemetry-card">
+                <span>Validation</span>
+                <strong>SITL · HITL</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-chip chip-one" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 16l4-4 4 3 7-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 7h4v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Stability Analysis
+          </div>
+
+          <div class="floating-chip chip-two" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l7 4v5c0 4.5-2.9 7.4-7 9-4.1-1.6-7-4.5-7-9V7l7-4Z" stroke="currentColor" stroke-width="2"/>
+              <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Flight-Test Ready Workflow
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         WHO I AM SECTION
+    ====================================================== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-copy">
+            <div class="section-heading reveal">
+              <span class="eyebrow">Profile</span>
+              <h2 class="section-title" id="about-heading">Who I Am</h2>
+            </div>
+
+            <div class="reveal reveal-delay-1">
+              <p>
+                I am Ahsanul Resam, an Aeronautical Engineering graduate from
+                Aviation and Aerospace University Bangladesh. My primary interests
+                are flight dynamics, fixed-wing UAVs, autonomous flight control,
+                aircraft design, and practical engineering development.
+              </p>
+
+              <p>
+                My academic and project work has focused on developing a complete
+                autonomous fixed-wing UAV autopilot. The project covered aerodynamic
+                analysis in XFLR5, stability-derivative extraction, mathematical and
+                state-space modelling, PID, LQR, and LQI controller design, MATLAB
+                and Simulink validation, FlightGear visualization, waypoint
+                navigation, and PX4/Pixhawk 6C integration through software-in-the-loop
+                and hardware-in-the-loop testing.
+              </p>
+
+              <p>
+                I also gained practical aircraft-manufacturing experience through
+                the AIAA Design/Build/Fly 2024–2025 competition, where I contributed
+                to structural-part manufacturing, glass-fibre lamination, and final
+                aircraft assembly. In another conceptual aircraft project, I worked
+                on aircraft configuration and hydrogen PEM fuel-cell propulsion
+                selection.
+              </p>
+
+              <p>
+                I enjoy connecting engineering theory with real systems. My goal is
+                to continue developing reliable aerospace and mechanical systems
+                while expanding my knowledge through research, professional
+                engineering work, and postgraduate study.
+              </p>
+            </div>
+
+            <div class="info-grid reveal reveal-delay-2" aria-label="Professional information">
+              <article class="info-card">
+                <span>Education</span>
+                <strong>B.Sc. in Aeronautical Engineering</strong>
+              </article>
+              <article class="info-card">
+                <span>University</span>
+                <strong>Aviation and Aerospace University Bangladesh</strong>
+              </article>
+              <article class="info-card">
+                <span>CGPA</span>
+                <strong>3.40 out of 4.00</strong>
+              </article>
+              <article class="info-card">
+                <span>Location</span>
+                <strong>Bangladesh</strong>
+              </article>
+              <article class="info-card">
+                <span>Primary Focus</span>
+                <strong>UAV Flight Control and Autonomous Systems</strong>
+              </article>
+              <article class="info-card">
+                <span>Current Direction</span>
+                <strong>Engineering, research, and postgraduate opportunities</strong>
+              </article>
+            </div>
+          </div>
+
+          <div class="profile-stage reveal reveal-delay-2">
+            <div class="profile-backdrop" aria-hidden="true"></div>
+            <div class="profile-frame">
+              <!-- Replace the placeholder below with your profile photo URL or file path -->
+              <!-- Example:
+              <img
+                class="profile-placeholder"
+                src="your-profile-photo.jpg"
+                alt="Portrait of Ahsanul Resam"
+              >
+              -->
+              <svg
+                class="profile-placeholder"
+                viewBox="0 0 520 680"
+                role="img"
+                aria-label="Profile photograph placeholder for Ahsanul Resam"
+                preserveAspectRatio="xMidYMid slice"
+              >
+                <defs>
+                  <linearGradient id="portraitBg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#0B315D"/>
+                    <stop offset="1" stop-color="#030A14"/>
+                  </linearGradient>
+                  <linearGradient id="portraitBody" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#38A7FF"/>
+                    <stop offset="1" stop-color="#0A396D"/>
+                  </linearGradient>
+                </defs>
+                <rect width="520" height="680" fill="url(#portraitBg)"/>
+                <g opacity=".18" stroke="#B9E3FF">
+                  <path d="M0 88h520M0 176h520M0 264h520M0 352h520M0 440h520M0 528h520M0 616h520"/>
+                  <path d="M65 0v680M130 0v680M195 0v680M260 0v680M325 0v680M390 0v680M455 0v680"/>
+                </g>
+                <circle cx="260" cy="270" r="105" fill="#B9E3FF" opacity=".92"/>
+                <path d="M130 636c9-122 52-204 130-204s121 82 130 204" fill="url(#portraitBody)"/>
+                <path d="M204 423c12 34 99 34 112 0v65c-20 30-91 30-112 0Z" fill="#91D0F8"/>
+                <path d="M151 676v-34c0-55 44-99 99-99h20c55 0 99 44 99 99v34Z" fill="#061426"/>
+                <path d="m234 503 26 35 27-35 22 25-49 103-49-103Z" fill="#EAF6FF"/>
+                <path d="M197 237c12-66 116-89 151-5 13 31 4 99-17 126-20 26-48 44-72 44-25 0-54-18-73-45-20-29-26-89-10-120 5-11 12-20 21-28Z" fill="#C9EBFF"/>
+                <path d="M182 247c10-91 140-118 164-13-31-34-63-45-101-42-24 2-46 11-63 29Z" fill="#061426"/>
+                <path d="M192 249c0-26 7-47 20-63-31 11-52 39-55 75Z" fill="#061426"/>
+                <circle cx="224" cy="286" r="5" fill="#061426"/>
+                <circle cx="297" cy="286" r="5" fill="#061426"/>
+                <path d="M244 333c11 9 24 9 34 0" fill="none" stroke="#32658E" stroke-width="5" stroke-linecap="round"/>
+                <path d="M130 115C211 53 302 54 400 114" fill="none" stroke="#38A7FF" stroke-width="3" stroke-dasharray="8 11" opacity=".65"/>
+                <circle cx="130" cy="115" r="8" fill="#57D6A1"/>
+                <circle cx="400" cy="114" r="8" fill="#38A7FF"/>
+                <text x="260" y="80" fill="#AFC4DA" font-size="17" font-family="system-ui" text-anchor="middle" letter-spacing="3">PROFILE PHOTO</text>
+              </svg>
+
+              <div class="profile-label">
+                <div>
+                  <span>Aeronautical Engineer</span>
+                  <strong>Ahsanul Resam</strong>
+                </div>
+                <div class="profile-label-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="m2 16 8-4V4l2-2 2 2v8l8 4v2l-8-2v4l3 2v1l-5-1-5 1v-1l3-2v-4l-8 2v-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-wrap" aria-labelledby="skills-heading">
+          <div class="section-heading centered reveal">
+            <span class="eyebrow">Technical Capability</span>
+            <h2 class="section-title" id="skills-heading">Engineering Skills</h2>
+            <p class="section-subtitle">
+              A multidisciplinary foundation across aircraft analysis, control
+              systems, simulation, autonomous flight, and practical manufacturing.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-group reveal">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M3 17c4-7 8-10 18-10M5 20c3-5 7-7 14-7M11 4l4 3-4 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Flight Dynamics and Aerodynamics
+              </h3>
+              <div class="tag-list">
+                <span class="tag">Aircraft Stability and Control</span>
+                <span class="tag">Aerodynamic Derivatives</span>
+                <span class="tag">State-Space Modelling</span>
+                <span class="tag">Longitudinal and Lateral Dynamics</span>
+                <span class="tag">XFOIL</span>
+                <span class="tag">XFLR5</span>
+                <span class="tag">MIL-F-8785C Analysis</span>
+              </div>
+            </article>
+
+            <article class="skill-group reveal reveal-delay-1">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 17V7m5 13V4m6 13V7m5 13V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M2 14c3-6 6 2 9-4s6 2 11-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Control Systems
+              </h3>
+              <div class="tag-list">
+                <span class="tag">PID Control</span>
+                <span class="tag">LQR</span>
+                <span class="tag">LQI</span>
+                <span class="tag">Cascaded Flight-Control Architecture</span>
+                <span class="tag">Attitude Control</span>
+                <span class="tag">Altitude Control</span>
+                <span class="tag">Heading and Roll Control</span>
+                <span class="tag">Waypoint Guidance</span>
+              </div>
+            </article>
+
+            <article class="skill-group reveal reveal-delay-1">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 21h8M12 17v4M7 10l3 3 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Software and Simulation
+              </h3>
+              <div class="tag-list">
+                <span class="tag">MATLAB</span>
+                <span class="tag">Simulink</span>
+                <span class="tag">FlightGear</span>
+                <span class="tag">PX4</span>
+                <span class="tag">QGroundControl</span>
+                <span class="tag">Software-in-the-Loop</span>
+                <span class="tag">Hardware-in-the-Loop</span>
+              </div>
+            </article>
+
+            <article class="skill-group reveal reveal-delay-2">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 6 5 15l4 4 9-9M13 7l4-4 4 4-4 4M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Engineering and Manufacturing
+              </h3>
+              <div class="tag-list">
+                <span class="tag">Aircraft Structural Manufacturing</span>
+                <span class="tag">Glass-Fibre Lamination</span>
+                <span class="tag">Final Aircraft Assembly</span>
+                <span class="tag">Conceptual Aircraft Design</span>
+                <span class="tag">Technical Documentation</span>
+                <span class="tag">Engineering Presentation</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         JOURNEY SECTION
+    ====================================================== -->
+    <section class="journey" id="journey" aria-labelledby="journey-heading">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Development Path</span>
+          <h2 class="section-title" id="journey-heading">My Journey</h2>
+          <p class="section-subtitle">
+            From learning the fundamentals of aircraft engineering to developing
+            and validating an autonomous fixed-wing UAV control system.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 19h16M6 17V8l6-4 6 4v9M9 17v-5h6v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-index">Stage 01</span>
+              <h3>Building the Engineering Foundation</h3>
+              <p>
+                Started studying Aeronautical Engineering and developed a
+                foundation in aerodynamics, aircraft structures, propulsion,
+                flight mechanics, mathematics, and engineering analysis.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 16 12 4l9 12-9-4-9 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M12 12v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-index">Stage 02</span>
+              <h3>Moving from Theory to Aircraft Design</h3>
+              <p>
+                Began applying academic knowledge through aircraft geometry
+                development, airfoil analysis, aerodynamic-performance evaluation,
+                stability analysis, and conceptual aircraft design.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="m5 8 7-4 7 4-7 4-7-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M5 8v8l7 4 7-4V8M12 12v8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-index">Stage 03</span>
+              <h3>Gaining Manufacturing Experience</h3>
+              <p>
+                Worked as part of the AIAA Design/Build/Fly 2024–2025 team.
+                Contributed to structural-part manufacturing, glass-fibre
+                lamination, airframe preparation, and final assembly.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 16c3-7 6-7 9 0s6 7 7 0M4 8h3m10 0h3M12 3v3m0 12v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-index">Stage 04</span>
+              <h3>Entering Flight Dynamics and Control</h3>
+              <p>
+                Studied longitudinal and lateral aircraft dynamics, aerodynamic
+                derivatives, stability modes, state-space representation,
+                controllability, observability, and feedback-control principles.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 18h4V8H4v10Zm6 0h4V4h-4v14Zm6 0h4v-7h-4v7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M3 21h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-index">Stage 05</span>
+              <h3>Developing a Fixed-Wing UAV Autopilot</h3>
+              <p>
+                Helped develop a complete control architecture using PID, LQR,
+                and LQI methods for pitch, altitude, roll, heading, and
+                waypoint-following tasks.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 21h8M12 18v3M8 10h8M12 7v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-index">Stage 06</span>
+              <h3>Connecting Simulation with Real Flight Hardware</h3>
+              <p>
+                Integrated the controller with MATLAB/Simulink, FlightGear, PX4,
+                QGroundControl, and Pixhawk 6C. Conducted software-in-the-loop
+                and hardware-in-the-loop validation.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 17 10 5l3 6 3-3 4 9H4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-index">Stage 07</span>
+              <h3>Current Direction</h3>
+              <p>
+                Now focused on expanding expertise in aerospace and mechanical
+                engineering, autonomous systems, flight control, research, and
+                postgraduate education.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROJECTS SECTION
+    ====================================================== -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Selected Engineering Work</span>
+          <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+          <p class="section-subtitle">
+            Selected projects demonstrating aircraft design, control-system
+            development, simulation, manufacturing, and technical problem-solving.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="project-status">Final-Year Thesis Project</span>
+                <span class="project-number">PROJECT 01</span>
+              </div>
+
+              <h3>Autonomous Fixed-Wing UAV Autopilot</h3>
+              <p class="project-overview">
+                Designed and validated an end-to-end autonomous flight-control
+                workflow for a fixed-wing UAV, beginning with aerodynamic modelling
+                and ending with real-time autopilot integration.
+              </p>
+
+              <div class="project-columns">
+                <div class="project-block">
+                  <h4>Main Contributions</h4>
+                  <ul class="check-list">
+                    <li>UAV aerodynamic and stability analysis using XFLR5</li>
+                    <li>Extraction and dimensionalization of aerodynamic derivatives</li>
+                    <li>Longitudinal and lateral state-space model development</li>
+                    <li>PID, LQR, and LQI controller design and comparison</li>
+                    <li>Pitch, altitude, roll, and heading control</li>
+                    <li>Single and multi-waypoint navigation</li>
+                    <li>MATLAB, Simulink, and FlightGear validation</li>
+                    <li>PX4 and Pixhawk 6C integration</li>
+                    <li>SITL and HITL validation</li>
+                  </ul>
+                </div>
+
+                <div class="project-block">
+                  <h4>Key Outcome</h4>
+                  <div class="outcome-card">
+                    <p>
+                      Developed a complete and explainable workflow connecting
+                      aircraft geometry, aerodynamic derivatives, mathematical
+                      modelling, controller design, navigation, simulation, and
+                      flight-computer implementation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tag-list" aria-label="Project technologies">
+                <span class="tag">MATLAB</span>
+                <span class="tag">Simulink</span>
+                <span class="tag">XFLR5</span>
+                <span class="tag">FlightGear</span>
+                <span class="tag">PX4</span>
+                <span class="tag">Pixhawk 6C</span>
+                <span class="tag">QGroundControl</span>
+                <span class="tag">PID</span>
+                <span class="tag">LQR</span>
+                <span class="tag">LQI</span>
+                <span class="tag">SITL</span>
+                <span class="tag">HITL</span>
+              </div>
+
+              <div class="project-footer">
+                <!-- Replace # with the thesis report, repository, presentation, or project-page URL -->
+                <a class="project-link" href="#contact" aria-label="Ask Ahsanul Resam about the autonomous UAV autopilot project">
+                  Discuss This Project
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-visual" aria-label="UAV autopilot system illustration">
+              <svg viewBox="0 0 390 330" role="img" aria-label="Aircraft, controller, and waypoint system diagram">
+                <defs>
+                  <linearGradient id="projectPlane" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#FFFFFF"/>
+                    <stop offset="1" stop-color="#38A7FF"/>
+                  </linearGradient>
+                </defs>
+                <path d="M48 255C106 216 123 275 178 207c50-62 88-104 158-120" fill="none" stroke="#38A7FF" stroke-width="3" stroke-dasharray="9 10"/>
+                <circle cx="48" cy="255" r="7" fill="#57D6A1"/>
+                <circle cx="178" cy="207" r="7" fill="#38A7FF"/>
+                <circle cx="336" cy="87" r="7" fill="#FFD477"/>
+                <g transform="translate(203 159) rotate(-25)">
+                  <path d="M0-82c6 0 9 6 9 14v43l61 39c5 3 7 7 5 12l-2 7-64-20v31l20 14v9L0 59l-29 8v-9l20-14V13l-64 20-2-7c-2-5 0-9 5-12L-9-25v-43c0-8 3-14 9-14Z" fill="url(#projectPlane)"/>
+                </g>
+                <rect x="55" y="61" width="92" height="60" rx="14" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
+                <text x="101" y="86" fill="#B9E3FF" font-family="system-ui" font-size="11" text-anchor="middle">STATE-SPACE</text>
+                <text x="101" y="103" fill="#FFFFFF" font-family="system-ui" font-size="15" font-weight="700" text-anchor="middle">A · B · C · D</text>
+                <rect x="246" y="235" width="94" height="58" rx="14" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
+                <text x="293" y="260" fill="#B9E3FF" font-family="system-ui" font-size="11" text-anchor="middle">AUTOPILOT</text>
+                <text x="293" y="278" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700" text-anchor="middle">PX4 / PIXHAWK</text>
+              </svg>
+
+              <div class="result-grid">
+                <div class="result-card">
+                  <span>Cross-track error</span>
+                  <strong>33.6 m → 6.4 m</strong>
+                </div>
+                <div class="result-card">
+                  <span>Roll deviation</span>
+                  <strong>24.5° → 6.4°</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="project-status">Team Competition Project</span>
+                <span class="project-number">PROJECT 02</span>
+              </div>
+
+              <h3>AIAA Design/Build/Fly 2024–2025</h3>
+              <p class="project-overview">
+                Participated in the design and manufacturing process of a competition
+                aircraft developed for the AIAA Design/Build/Fly programme.
+              </p>
+
+              <div class="project-columns">
+                <div class="project-block">
+                  <h4>Main Contributions</h4>
+                  <ul class="check-list">
+                    <li>Structural-part manufacturing</li>
+                    <li>Glass-fibre lamination</li>
+                    <li>Airframe preparation</li>
+                    <li>Final aircraft assembly</li>
+                    <li>Team-based engineering and manufacturing work</li>
+                  </ul>
+                </div>
+
+                <div class="project-block">
+                  <h4>Key Outcome</h4>
+                  <div class="outcome-card">
+                    <p>
+                      Gained practical experience in converting an aircraft design
+                      into a manufactured and assembled airframe.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tag-list">
+                <span class="tag">Aircraft Manufacturing</span>
+                <span class="tag">Composite Materials</span>
+                <span class="tag">Glass Fibre</span>
+                <span class="tag">Structural Assembly</span>
+                <span class="tag">Teamwork</span>
+              </div>
+
+              <div class="project-footer">
+                <!-- Replace # with a competition, project gallery, or portfolio URL -->
+                <a class="project-link" href="#contact" aria-label="Ask Ahsanul Resam about the AIAA Design Build Fly project">
+                  Discuss This Project
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-visual" aria-label="Aircraft manufacturing illustration">
+              <svg viewBox="0 0 390 330" role="img" aria-label="Technical aircraft structure and composite manufacturing illustration">
+                <g fill="none" stroke="#B9E3FF" stroke-opacity=".34">
+                  <path d="M45 255h300M74 74v188M316 74v188" stroke-dasharray="5 8"/>
+                  <path d="M90 111h210M90 221h210"/>
+                </g>
+                <path d="M195 68 322 206l-21 18-106-54-106 54-21-18L195 68Z" fill="#1677FF" fill-opacity=".24" stroke="#76C6FF" stroke-width="2"/>
+                <path d="M195 68v102M89 224l106-54 106 54M119 174h152" fill="none" stroke="#EAF6FF" stroke-opacity=".72" stroke-width="2"/>
+                <path d="m195 170-28 83h56l-28-83Z" fill="#38A7FF" fill-opacity=".45" stroke="#B9E3FF"/>
+                <circle cx="195" cy="170" r="9" fill="#57D6A1"/>
+                <rect x="44" y="47" width="102" height="39" rx="12" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
+                <text x="95" y="71" fill="#EAF6FF" font-family="system-ui" font-size="13" text-anchor="middle">STRUCTURE</text>
+                <rect x="245" y="248" width="103" height="39" rx="12" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
+                <text x="296" y="272" fill="#EAF6FF" font-family="system-ui" font-size="13" text-anchor="middle">ASSEMBLY</text>
+              </svg>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="project-status">Conceptual Design Project</span>
+                <span class="project-number">PROJECT 03</span>
+              </div>
+
+              <h3>Conceptual Aircraft and Hydrogen PEM Propulsion Study</h3>
+              <p class="project-overview">
+                Contributed to a conceptual aircraft-development project involving
+                configuration decisions and the study of hydrogen-based propulsion.
+              </p>
+
+              <div class="project-columns">
+                <div class="project-block">
+                  <h4>Main Contributions</h4>
+                  <ul class="check-list">
+                    <li>Conceptual aircraft configuration</li>
+                    <li>Propulsion-system research</li>
+                    <li>Hydrogen fuel assessment</li>
+                    <li>PEM fuel-cell selection</li>
+                    <li>Technical comparison and presentation</li>
+                  </ul>
+                </div>
+
+                <div class="project-block">
+                  <h4>Key Outcome</h4>
+                  <div class="outcome-card">
+                    <p>
+                      Developed experience in evaluating emerging propulsion
+                      technologies for future aircraft concepts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tag-list">
+                <span class="tag">Conceptual Design</span>
+                <span class="tag">Hydrogen Propulsion</span>
+                <span class="tag">PEM Fuel Cell</span>
+                <span class="tag">Aircraft Systems</span>
+                <span class="tag">Technical Research</span>
+              </div>
+
+              <div class="project-footer">
+                <!-- Replace # with the project report, presentation, or case-study URL -->
+                <a class="project-link" href="#contact" aria-label="Ask Ahsanul Resam about the hydrogen PEM aircraft study">
+                  Discuss This Project
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-visual" aria-label="Hydrogen propulsion illustration">
+              <svg viewBox="0 0 390 330" role="img" aria-label="Hydrogen molecule, fuel cell, and aircraft concept illustration">
+                <circle cx="106" cy="112" r="38" fill="#1677FF" fill-opacity=".35" stroke="#76C6FF" stroke-width="2"/>
+                <circle cx="190" cy="82" r="28" fill="#38A7FF" fill-opacity=".3" stroke="#B9E3FF" stroke-width="2"/>
+                <circle cx="205" cy="161" r="30" fill="#38A7FF" fill-opacity=".3" stroke="#B9E3FF" stroke-width="2"/>
+                <path d="M136 98 164 88M138 128l39 22" stroke="#EAF6FF" stroke-width="4" stroke-linecap="round"/>
+                <text x="106" y="119" fill="#FFFFFF" font-family="system-ui" font-size="20" font-weight="700" text-anchor="middle">H₂</text>
+                <text x="190" y="88" fill="#FFFFFF" font-family="system-ui" font-size="15" text-anchor="middle">H</text>
+                <text x="205" y="167" fill="#FFFFFF" font-family="system-ui" font-size="15" text-anchor="middle">H</text>
+                <rect x="64" y="225" width="119" height="56" rx="16" fill="#061426" stroke="#38A7FF" stroke-opacity=".6"/>
+                <path d="M83 241h17v24H83zm29 0h17v24h-17zm29 0h17v24h-17z" fill="#1677FF" fill-opacity=".55" stroke="#B9E3FF"/>
+                <text x="123" y="300" fill="#AFC4DA" font-family="system-ui" font-size="11" text-anchor="middle">PEM FUEL CELL</text>
+                <g transform="translate(276 214) rotate(-12)">
+                  <path d="M0-58c4 0 6 4 6 10v30l43 27c3 2 5 5 4 8l-2 5-45-14v22l14 10v6L0 40l-20 6v-6l14-10V8l-45 14-2-5c-1-3 1-6 4-8l43-27v-30c0-6 2-10 6-10Z" fill="#EAF6FF"/>
+                </g>
+              </svg>
+            </div>
+          </article>
+
+          <!--
+            FUTURE PROJECT TEMPLATE:
+            Replace the title, status, overview, contributions, technology tags,
+            outcome, illustration, and link with a new project.
+          -->
+          <article class="project-card future-project reveal">
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="project-status">Reusable Project Template</span>
+                <span class="project-number">PROJECT 04</span>
+              </div>
+
+              <h3>Add Future Project</h3>
+              <p class="project-overview">
+                A polished space prepared for the next engineering project,
+                research activity, technical study, or professional achievement.
+              </p>
+
+              <div class="project-columns">
+                <div class="project-block">
+                  <h4>Suggested Content</h4>
+                  <ul class="check-list">
+                    <li>Define the engineering problem</li>
+                    <li>Explain your specific contribution</li>
+                    <li>List the tools, methods, or technologies used</li>
+                    <li>Show a measurable result or learning outcome</li>
+                  </ul>
+                </div>
+
+                <div class="project-block">
+                  <h4>Template Purpose</h4>
+                  <div class="outcome-card">
+                    <p>
+                      Keep the portfolio ready to grow as new research, design,
+                      control, simulation, or manufacturing experience is completed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tag-list">
+                <span class="tag">Your Technology</span>
+                <span class="tag">Your Method</span>
+                <span class="tag">Your Result</span>
+              </div>
+            </div>
+
+            <div class="project-visual" aria-label="Future engineering project placeholder">
+              <svg viewBox="0 0 390 330" role="img" aria-label="Blueprint-style future project placeholder">
+                <rect x="72" y="55" width="246" height="220" rx="24" fill="#061426" fill-opacity=".72" stroke="#38A7FF" stroke-opacity=".45" stroke-dasharray="8 10"/>
+                <circle cx="195" cy="142" r="47" fill="#1677FF" fill-opacity=".15" stroke="#76C6FF" stroke-width="2"/>
+                <path d="M195 116v52M169 142h52" stroke="#EAF6FF" stroke-width="5" stroke-linecap="round"/>
+                <path d="M116 228h158M137 245h116" stroke="#B9E3FF" stroke-opacity=".42" stroke-width="3" stroke-linecap="round"/>
+                <text x="195" y="91" fill="#AFC4DA" font-family="system-ui" font-size="12" text-anchor="middle" letter-spacing="2">NEXT ENGINEERING MILESTONE</text>
+              </svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         ACHIEVEMENTS SECTION
+    ====================================================== -->
+    <section id="achievements" aria-labelledby="achievements-heading">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Milestones</span>
+          <h2 class="section-title" id="achievements-heading">Achievements and Highlights</h2>
+          <p class="section-subtitle">
+            Academic, technical, and practical experiences that reflect a focused
+            path toward aircraft engineering and autonomous-system development.
+          </p>
+        </div>
+
+        <div class="achievement-grid">
+          <article class="achievement-card reveal">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="m3 10 9-5 9 5-9 5-9-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M7 13v4c3 2 7 2 10 0v-4M21 10v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Aeronautical Engineering Graduate</h3>
+            <p>
+              Completed a Bachelor of Science degree in Aeronautical Engineering
+              from Aviation and Aerospace University Bangladesh.
+            </p>
+          </article>
+
+          <article class="achievement-card reveal reveal-delay-1">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 18h16M6 15l4-4 3 2 5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="6" cy="15" r="2" fill="currentColor"/>
+                <circle cx="10" cy="11" r="2" fill="currentColor"/>
+                <circle cx="13" cy="13" r="2" fill="currentColor"/>
+                <circle cx="18" cy="6" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Complete UAV Development Workflow</h3>
+            <p>
+              Contributed to a project covering aircraft geometry, aerodynamic
+              modelling, state-space development, controller design, navigation,
+              simulation, and flight-hardware integration.
+            </p>
+          </article>
+
+          <article class="achievement-card reveal reveal-delay-2">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 20h16M7 17l5-13 5 13M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>AIAA Design/Build/Fly Experience</h3>
+            <p>
+              Participated in the 2024–2025 competition cycle and gained practical
+              aircraft-manufacturing and composite-work experience.
+            </p>
+          </article>
+
+          <article class="achievement-card reveal">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 16c4-7 8-9 16-8M4 20c5-5 9-6 16-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="m15 5 5 3-5 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Flight-Control Validation</h3>
+            <p>
+              Demonstrated improved waypoint-tracking and roll-control performance
+              during the final validation of the UAV control architecture.
+            </p>
+          </article>
+
+          <article class="achievement-card reveal reveal-delay-1">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Multidisciplinary Engineering Experience</h3>
+            <p>
+              Worked across aerodynamics, dynamics, control, embedded-flight
+              systems, simulation, manufacturing, documentation, and technical
+              presentation.
+            </p>
+          </article>
+        </div>
+
+        <div class="metrics-band reveal" aria-label="Technical highlights">
+          <div class="metric-item">
+            <strong>3</strong>
+            <span>Control Methods Compared</span>
+          </div>
+          <div class="metric-item">
+            <strong>SITL + HITL</strong>
+            <span>Validation Methods</span>
+          </div>
+          <div class="metric-item">
+            <strong>Single + Multi</strong>
+            <span>Waypoint Missions</span>
+          </div>
+          <div class="metric-item">
+            <strong>End-to-End</strong>
+            <span>UAV Workflow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         ENGINEERING PHILOSOPHY SECTION
+    ====================================================== -->
+    <section class="philosophy" aria-labelledby="philosophy-heading">
+      <div class="container">
+        <figure class="quote-card reveal">
+          <blockquote id="philosophy-heading">
+            “Good engineering is not only about developing a model that works in
+            theory. It is about understanding the system, validating every stage,
+            learning from failure, and creating a solution that can operate in the
+            real world.”
+          </blockquote>
+          <figcaption>— Ahsanul Resam</figcaption>
+
+          <svg viewBox="0 0 540 340" aria-hidden="true">
+            <path d="M20 276C132 236 139 318 234 219c84-87 121-134 278-165" fill="none" stroke="#38A7FF" stroke-width="4" stroke-dasharray="12 14"/>
+            <circle cx="20" cy="276" r="8" fill="#57D6A1"/>
+            <circle cx="234" cy="219" r="8" fill="#38A7FF"/>
+            <circle cx="512" cy="54" r="8" fill="#FFD477"/>
+            <g transform="translate(321 148) rotate(-27)">
+              <path d="M0-70c5 0 8 5 8 12v37l53 34c4 2 6 6 4 10l-2 6L8 12v26l17 12v7L0 50l-25 7v-7l17-12V12l-55 17-2-6c-2-4 0-8 4-10L-8-21v-37c0-7 3-12 8-12Z" fill="#EAF6FF"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACT SECTION
+    ====================================================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Professional Contact</span>
+          <h2 class="section-title" id="contact-heading">Let’s Connect</h2>
+          <p class="section-subtitle">
+            I am interested in engineering opportunities, research collaboration,
+            postgraduate study, UAV development, flight-control systems, and
+            multidisciplinary technical projects.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="social-grid reveal">
+            <!-- Replace all placeholder URLs and the email address below -->
+
+            <a
+              class="social-card"
+              href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Ahsanul Resam on LinkedIn"
+            >
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.7 8.3H3.1V20h3.6V8.3ZM4.9 3A2.1 2.1 0 1 0 5 7.2 2.1 2.1 0 0 0 5 3Zm8 5.3H9.4V20H13v-5.8c0-1.5.3-3 2.2-3 1.9 0 1.9 1.7 1.9 3.1V20h3.6v-6.4c0-3.2-.7-5.6-4.4-5.6-1.8 0-3 .9-3.5 1.8h-.1V8.3Z"/>
+                </svg>
+              </span>
+              <span>
+                <strong>LinkedIn</strong>
+                <span>Professional profile and networking</span>
+              </span>
+              <svg class="social-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a
+              class="social-card"
+              href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Ahsanul Resam on Instagram"
+            >
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                </svg>
+              </span>
+              <span>
+                <strong>Instagram</strong>
+                <span>Projects, events, and personal updates</span>
+              </span>
+              <svg class="social-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a
+              class="social-card"
+              href="https://www.facebook.com/YOUR-FACEBOOK-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Ahsanul Resam on Facebook"
+            >
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13.7 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.5v3h2.8v8h3.4Z"/>
+                </svg>
+              </span>
+              <span>
+                <strong>Facebook</strong>
+                <span>Community and personal connection</span>
+              </span>
+              <svg class="social-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <a
+              class="social-card"
+              href="mailto:YOUR-EMAIL@example.com"
+              aria-label="Email Ahsanul Resam"
+            >
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6h16v12H4zM4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>
+                <strong>Email</strong>
+                <span>YOUR-EMAIL@example.com</span>
+              </span>
+              <svg class="social-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <form class="contact-form reveal reveal-delay-1" id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Your full name"
+                  required
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="your.email@example.com"
+                  required
+                >
+              </div>
+
+              <div class="form-field full">
+                <label for="contact-subject">Subject</label>
+                <input
+                  id="contact-subject"
+                  name="subject"
+                  type="text"
+                  placeholder="Engineering opportunity, research, or collaboration"
+                  required
+                >
+              </div>
+
+              <div class="form-field full">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="Tell me about the opportunity, project, or idea."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">
+                Send Message
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m3 11 18-8-8 18-2-8-8-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="m11 13 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <p class="form-notice" id="form-notice" role="status" aria-live="polite">
+                This form opens your default email application.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="Return to portfolio home">
+            <span class="brand-mark" aria-hidden="true">AR</span>
+            <span class="brand-text">
+              Ahsanul Resam
+              <small>Aeronautical Engineer</small>
+            </span>
+          </a>
+          <p>
+            Designed around engineering, flight, and continuous learning.
+          </p>
+        </div>
+
+        <div class="footer-group">
+          <h3>Quick Navigation</h3>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#about">Who I Am</a>
+            <a href="#journey">Journey</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-group footer-social-wrap">
+          <h3>Social Profiles</h3>
+          <div class="footer-social">
+            <!-- Replace placeholder social URLs below -->
+            <a
+              href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.7 8.3H3.1V20h3.6V8.3ZM4.9 3A2.1 2.1 0 1 0 5 7.2 2.1 2.1 0 0 0 5 3Zm8 5.3H9.4V20H13v-5.8c0-1.5.3-3 2.2-3 1.9 0 1.9 1.7 1.9 3.1V20h3.6v-6.4c0-3.2-.7-5.6-4.4-5.6-1.8 0-3 .9-3.5 1.8h-.1V8.3Z"/>
+              </svg>
+            </a>
+
+            <a
+              href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a
+              href="https://www.facebook.com/YOUR-FACEBOOK-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13.7 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.5v3h2.8v8h3.4Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Ahsanul Resam. All rights reserved.</span>
+        <span>Built for engineering, research, and professional opportunities.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="m6 14 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script>
+    /* =========================================================
+       INTERACTIONS
+    ========================================================= */
+    (() => {
+      "use strict";
+
+      const header = document.getElementById("site-header");
+      const menuToggle = document.getElementById("menu-toggle");
+      const menuIcon = document.getElementById("menu-icon");
+      const siteNav = document.getElementById("site-nav");
+      const navLinks = Array.from(document.querySelectorAll(".nav-link"));
+      const sectionLinks = navLinks.filter((link) => link.getAttribute("href").startsWith("#"));
+      const sections = sectionLinks
+        .map((link) => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+      const backToTop = document.getElementById("back-to-top");
+      const contactForm = document.getElementById("contact-form");
+      const formNotice = document.getElementById("form-notice");
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const openMenu = () => {
+        siteNav.classList.add("open");
+        document.body.classList.add("menu-open");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.setAttribute("aria-label", "Close navigation menu");
+        menuIcon.innerHTML = '<path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+      };
+
+      const closeMenu = () => {
+        siteNav.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuIcon.innerHTML = '<path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        isOpen ? closeMenu() : openMenu();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          siteNav.classList.contains("open") &&
+          !siteNav.contains(event.target) &&
+          !menuToggle.contains(event.target)
+        ) {
+          closeMenu();
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 900) {
+          closeMenu();
+        }
+      });
+
+      const updateOnScroll = () => {
+        const scrollY = window.scrollY;
+
+        header.classList.toggle("scrolled", scrollY > 20);
+        backToTop.classList.toggle("visible", scrollY > 650);
+
+        let currentSectionId = "home";
+        const offset = parseFloat(
+          getComputedStyle(document.documentElement).getPropertyValue("--header-height")
+        ) + 90;
+
+        sections.forEach((section) => {
+          if (scrollY >= section.offsetTop - offset) {
+            currentSectionId = section.id;
+          }
+        });
+
+        navLinks.forEach((link) => {
+          const isActive = link.getAttribute("href") === `#${currentSectionId}`;
+          link.classList.toggle("active", isActive);
+          if (isActive) {
+            link.setAttribute("aria-current", "page");
+          } else {
+            link.removeAttribute("aria-current");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", updateOnScroll, { passive: true });
+      updateOnScroll();
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: prefersReducedMotion ? "auto" : "smooth"
+        });
+      });
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+        revealElements.forEach((element) => element.classList.add("visible"));
+      } else {
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.12,
+            rootMargin: "0px 0px -45px 0px"
+          }
+        );
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+      }
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById("contact-name");
+        const email = document.getElementById("contact-email");
+        const subject = document.getElementById("contact-subject");
+        const message = document.getElementById("contact-message");
+
+        const fields = [name, email, subject, message];
+        const firstInvalidField = fields.find((field) => !field.checkValidity());
+
+        if (firstInvalidField) {
+          formNotice.textContent = "Please complete all required fields using a valid email address.";
+          formNotice.classList.add("error");
+          firstInvalidField.focus();
+          firstInvalidField.reportValidity();
+          return;
+        }
+
+        formNotice.classList.remove("error");
+        formNotice.textContent = "Your email application will open with the message prepared.";
+
+        // Change this receiving email address before publishing the website.
+        const receivingEmail = "YOUR-EMAIL@example.com";
+
+        const emailSubject = encodeURIComponent(subject.value.trim());
+        const emailBody = encodeURIComponent(
+          `Hello Ahsanul,\n\n${message.value.trim()}\n\n` +
+          `Sender details:\nName: ${name.value.trim()}\nEmail: ${email.value.trim()}\n`
+        );
+
+        const mailtoUrl = `mailto:${receivingEmail}?subject=${emailSubject}&body=${emailBody}`;
+
+        window.location.href = mailtoUrl;
+      });
+    })();
+  </script>
+</body>
+</html>
