@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <!--
+    REDESIGN NOTE: This is an original aerospace portfolio informed by the reference site's clear academic storytelling and project-gallery structure.
+
     PORTFOLIO OWNER: UPDATE THESE ITEMS
     1. Profile photograph
     2. Email address
@@ -19,7 +21,7 @@
   <title>Ahsanul Resam | Aeronautical Engineer and UAV Autopilot Developer</title>
   <meta name="description" content="Portfolio of Ahsanul Resam, an Aeronautical Engineering graduate specialising in fixed-wing UAV control, flight dynamics, aircraft design, MATLAB/Simulink, PX4, and autonomous flight systems.">
   <meta name="author" content="Ahsanul Resam">
-  <meta name="theme-color" content="#061426">
+  <meta name="theme-color" content="#0d0d0d">
 
   <meta property="og:title" content="Ahsanul Resam | Aeronautical Engineer and UAV Autopilot Developer">
   <meta property="og:description" content="Aeronautical Engineering graduate specialising in fixed-wing UAV control, flight dynamics, aircraft design, MATLAB/Simulink, PX4, and autonomous flight systems.">
@@ -61,36 +63,36 @@
        DESIGN TOKENS
     ========================================================= */
     :root {
-      --navy-950: #030a14;
-      --navy-900: #061426;
-      --navy-850: #071a31;
-      --navy-800: #09203f;
-      --blue-600: #1677ff;
-      --blue-500: #2490ff;
-      --blue-400: #38a7ff;
-      --blue-300: #76c6ff;
-      --blue-200: #b9e3ff;
-      --blue-100: #d9efff;
-      --blue-050: #eaf6ff;
+      --navy-950: #090909;
+      --navy-900: #121212;
+      --navy-850: #181818;
+      --navy-800: #1d1d1d;
+      --blue-600: #111111;
+      --blue-500: #2a2a2a;
+      --blue-400: #555555;
+      --blue-300: #919191;
+      --blue-200: #d0d0d0;
+      --blue-100: #ececec;
+      --blue-050: #f6f6f6;
       --white: #ffffff;
-      --text: #eef7ff;
-      --muted: #afc4da;
-      --muted-2: #7f9bb8;
-      --success: #57d6a1;
-      --warning: #ffd477;
-      --danger: #ff8d8d;
+      --text: #171717;
+      --muted: #666666;
+      --muted-2: #979797;
+      --success: #111111;
+      --warning: #666666;
+      --danger: #a5a5a5;
 
       --bg: var(--navy-900);
       --bg-soft: var(--navy-850);
-      --surface: rgba(12, 35, 65, 0.78);
-      --surface-strong: rgba(15, 44, 81, 0.92);
+      --surface: #ffffff;
+      --surface-strong: rgba(41, 41, 41, 0.92);
       --surface-light: rgba(255, 255, 255, 0.055);
-      --border: rgba(185, 227, 255, 0.16);
-      --border-strong: rgba(56, 167, 255, 0.35);
+      --border: rgba(220, 220, 220, 0.16);
+      --border-strong: rgba(150, 150, 150, 0.35);
 
       --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.18);
       --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.28);
-      --shadow-blue: 0 18px 60px rgba(22, 119, 255, 0.18);
+      --shadow-blue: 0 18px 60px rgba(108, 108, 108, 0.18);
 
       --radius-sm: 12px;
       --radius-md: 20px;
@@ -125,9 +127,9 @@
       overflow-x: hidden;
       color: var(--text);
       background:
-        radial-gradient(circle at 12% 12%, rgba(22, 119, 255, 0.15), transparent 28rem),
-        radial-gradient(circle at 88% 18%, rgba(56, 167, 255, 0.1), transparent 24rem),
-        linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 12%, #071a31 52%, var(--navy-900) 100%);
+        radial-gradient(circle at 12% 12%, rgba(108, 108, 108, 0.15), transparent 28rem),
+        radial-gradient(circle at 88% 18%, rgba(150, 150, 150, 0.1), transparent 24rem),
+        linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 12%, #181818 52%, var(--navy-900) 100%);
       font-family:
         Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -142,7 +144,7 @@
 
     ::selection {
       color: var(--white);
-      background: rgba(22, 119, 255, 0.72);
+      background: rgba(108, 108, 108, 0.72);
     }
 
     img,
@@ -245,7 +247,7 @@
 
     .surface {
       border: 1px solid var(--border);
-      background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025));
       box-shadow: var(--shadow-sm);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
@@ -298,11 +300,11 @@
     .btn-primary {
       color: var(--white);
       background: linear-gradient(135deg, var(--blue-600), var(--blue-400));
-      box-shadow: 0 10px 32px rgba(22, 119, 255, 0.25);
+      box-shadow: 0 10px 32px rgba(108, 108, 108, 0.25);
     }
 
     .btn-primary:hover {
-      box-shadow: 0 14px 38px rgba(22, 119, 255, 0.38);
+      box-shadow: 0 14px 38px rgba(108, 108, 108, 0.38);
     }
 
     .btn-secondary {
@@ -313,7 +315,7 @@
 
     .btn-secondary:hover {
       border-color: var(--blue-300);
-      background: rgba(56, 167, 255, 0.1);
+      background: rgba(150, 150, 150, 0.1);
     }
 
     .icon {
@@ -332,10 +334,10 @@
       display: inline-flex;
       align-items: center;
       padding: 0.4rem 0.7rem;
-      border: 1px solid rgba(185, 227, 255, 0.13);
+      border: 1px solid rgba(220, 220, 220, 0.13);
       border-radius: var(--radius-pill);
       color: var(--blue-100);
-      background: rgba(56, 167, 255, 0.075);
+      background: rgba(150, 150, 150, 0.075);
       font-size: 0.79rem;
       font-weight: 700;
     }
@@ -349,7 +351,7 @@
       inset: 0 0 auto;
       height: var(--header-height);
       border-bottom: 1px solid transparent;
-      background: rgba(3, 10, 20, 0.52);
+      background: rgba(9, 9, 9, 0.52);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       transition:
@@ -360,7 +362,7 @@
 
     .site-header.scrolled {
       border-color: var(--border);
-      background: rgba(3, 10, 20, 0.88);
+      background: rgba(9, 9, 9, 0.88);
       box-shadow: 0 12px 35px rgba(0, 0, 0, 0.24);
     }
 
@@ -390,8 +392,8 @@
       border: 1px solid var(--border-strong);
       border-radius: 13px;
       color: var(--white);
-      background: linear-gradient(145deg, rgba(22, 119, 255, 0.92), rgba(56, 167, 255, 0.25));
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22);
+      background: linear-gradient(145deg, rgba(108, 108, 108, 0.92), rgba(150, 150, 150, 0.25));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
     }
 
     .brand-mark::after {
@@ -399,7 +401,7 @@
       width: 48px;
       height: 1px;
       content: "";
-      background: rgba(255,255,255,0.5);
+      background: rgba(255, 255, 255, 0.5);
       transform: rotate(-35deg);
     }
 
@@ -471,7 +473,7 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       color: var(--white);
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       cursor: pointer;
     }
 
@@ -498,8 +500,8 @@
       content: "";
       opacity: 0.3;
       background-image:
-        linear-gradient(rgba(185,227,255,0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(185,227,255,0.05) 1px, transparent 1px);
+        linear-gradient(rgba(220, 220, 220, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(220, 220, 220, 0.05) 1px, transparent 1px);
       background-size: 54px 54px;
       mask-image: linear-gradient(to bottom, black, transparent 88%);
     }
@@ -511,11 +513,11 @@
       right: -10rem;
       width: min(60vw, 850px);
       aspect-ratio: 1;
-      border: 1px solid rgba(56,167,255,0.11);
+      border: 1px solid rgba(150, 150, 150, 0.11);
       border-radius: 50%;
       box-shadow:
-        0 0 0 70px rgba(56,167,255,0.025),
-        0 0 0 140px rgba(56,167,255,0.018);
+        0 0 0 70px rgba(150, 150, 150, 0.025),
+        0 0 0 140px rgba(150, 150, 150, 0.018);
       animation: orbitPulse 8s ease-in-out infinite;
     }
 
@@ -542,10 +544,10 @@
       gap: 0.6rem;
       margin-bottom: 1.25rem;
       padding: 0.48rem 0.74rem;
-      border: 1px solid rgba(56,167,255,0.22);
+      border: 1px solid rgba(150, 150, 150, 0.22);
       border-radius: var(--radius-pill);
       color: var(--blue-200);
-      background: rgba(22,119,255,0.08);
+      background: rgba(108, 108, 108, 0.08);
       font-size: 0.78rem;
       font-weight: 800;
       letter-spacing: 0.06em;
@@ -557,7 +559,7 @@
       height: 7px;
       border-radius: 50%;
       background: var(--success);
-      box-shadow: 0 0 0 5px rgba(87,214,161,0.11);
+      box-shadow: 0 0 0 5px rgba(183, 183, 183, 0.11);
     }
 
     .hero h1 {
@@ -604,7 +606,7 @@
       border-radius: 50%;
       content: "";
       background: var(--success);
-      box-shadow: 0 0 0 5px rgba(87,214,161,0.11);
+      box-shadow: 0 0 0 5px rgba(183, 183, 183, 0.11);
     }
 
     .hero-visual {
@@ -619,8 +621,8 @@
       border: 1px solid var(--border);
       border-radius: 34px;
       background:
-        radial-gradient(circle at 75% 20%, rgba(56,167,255,0.23), transparent 28%),
-        linear-gradient(145deg, rgba(12,38,72,0.95), rgba(3,10,20,0.78));
+        radial-gradient(circle at 75% 20%, rgba(150, 150, 150, 0.23), transparent 28%),
+        linear-gradient(145deg, rgba(35, 35, 35, 0.95), rgba(9, 9, 9, 0.78));
       box-shadow: var(--shadow-md), var(--shadow-blue);
     }
 
@@ -630,8 +632,8 @@
       content: "";
       opacity: 0.52;
       background-image:
-        linear-gradient(rgba(185,227,255,0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(185,227,255,0.06) 1px, transparent 1px);
+        linear-gradient(rgba(220, 220, 220, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(220, 220, 220, 0.06) 1px, transparent 1px);
       background-size: 34px 34px;
     }
 
@@ -670,7 +672,7 @@
       top: 17%;
       left: 7%;
       width: 87%;
-      filter: drop-shadow(0 20px 32px rgba(0,0,0,0.4));
+      filter: drop-shadow(0 20px 32px rgba(0, 0, 0, 0.4));
     }
 
     .flight-path {
@@ -695,9 +697,9 @@
 
     .telemetry-card {
       padding: 0.9rem;
-      border: 1px solid rgba(185,227,255,0.12);
+      border: 1px solid rgba(220, 220, 220, 0.12);
       border-radius: 15px;
-      background: rgba(3,10,20,0.62);
+      background: rgba(9, 9, 9, 0.62);
       backdrop-filter: blur(12px);
     }
 
@@ -727,7 +729,7 @@
       border: 1px solid var(--border);
       border-radius: 15px;
       color: var(--blue-100);
-      background: rgba(6,20,38,0.88);
+      background: rgba(18, 18, 18, 0.88);
       box-shadow: var(--shadow-sm);
       font-size: 0.78rem;
       font-weight: 800;
@@ -761,7 +763,7 @@
     ========================================================= */
     .about {
       background:
-        linear-gradient(180deg, transparent, rgba(255,255,255,0.018), transparent);
+        linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.018), transparent);
     }
 
     .about-grid {
@@ -788,10 +790,10 @@
     .profile-backdrop {
       position: absolute;
       inset: 5% 4% 0;
-      border: 1px solid rgba(56,167,255,0.12);
+      border: 1px solid rgba(150, 150, 150, 0.12);
       border-radius: 38px;
       background:
-        linear-gradient(145deg, rgba(22,119,255,0.16), rgba(56,167,255,0.025));
+        linear-gradient(145deg, rgba(108, 108, 108, 0.16), rgba(150, 150, 150, 0.025));
       transform: rotate(4deg);
     }
 
@@ -801,7 +803,7 @@
       border-radius: inherit;
       content: "";
       background-image:
-        radial-gradient(circle, rgba(185,227,255,0.18) 1px, transparent 1.5px);
+        radial-gradient(circle, rgba(220, 220, 220, 0.18) 1px, transparent 1.5px);
       background-size: 20px 20px;
       mask-image: linear-gradient(135deg, black, transparent 75%);
     }
@@ -813,7 +815,7 @@
       overflow: hidden;
       border: 1px solid var(--border-strong);
       border-radius: 32px;
-      background: linear-gradient(160deg, rgba(15,50,91,0.96), rgba(4,13,25,0.98));
+      background: linear-gradient(160deg, rgba(46, 46, 46, 0.96), rgba(12, 12, 12, 0.98));
       box-shadow: var(--shadow-md), var(--shadow-blue);
     }
 
@@ -835,9 +837,9 @@
       justify-content: space-between;
       gap: 1rem;
       padding: 1rem 1.1rem;
-      border: 1px solid rgba(255,255,255,0.11);
+      border: 1px solid rgba(255, 255, 255, 0.11);
       border-radius: 16px;
-      background: rgba(3,10,20,0.78);
+      background: rgba(9, 9, 9, 0.78);
       backdrop-filter: blur(14px);
     }
 
@@ -861,7 +863,7 @@
       place-items: center;
       border-radius: 13px;
       color: var(--blue-200);
-      background: rgba(22,119,255,0.16);
+      background: rgba(108, 108, 108, 0.16);
     }
 
     .profile-label-icon svg {
@@ -880,7 +882,7 @@
       padding: 1rem;
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
-      background: rgba(255,255,255,0.035);
+      background: rgba(255, 255, 255, 0.035);
     }
 
     .info-card span {
@@ -913,7 +915,7 @@
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
       background:
-        linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.022));
+        linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.022));
       transition: transform var(--transition), border-color var(--transition);
     }
 
@@ -961,7 +963,7 @@
         to bottom,
         transparent,
         var(--blue-400) 8%,
-        rgba(56,167,255,0.38) 90%,
+        rgba(150, 150, 150, 0.38) 90%,
         transparent
       );
       transform: translateX(-50%);
@@ -986,13 +988,13 @@
     .timeline-item:nth-child(odd) .timeline-card::after {
       right: -10px;
       border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent rgba(185,227,255,0.14);
+      border-color: transparent transparent transparent rgba(220, 220, 220, 0.14);
     }
 
     .timeline-item:nth-child(even) .timeline-card::after {
       left: -10px;
       border-width: 10px 10px 10px 0;
-      border-color: transparent rgba(185,227,255,0.14) transparent transparent;
+      border-color: transparent rgba(220, 220, 220, 0.14) transparent transparent;
     }
 
     .timeline-card {
@@ -1000,7 +1002,7 @@
       padding: 1.4rem;
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.025));
       box-shadow: var(--shadow-sm);
     }
 
@@ -1037,7 +1039,7 @@
       border-radius: 50%;
       color: var(--white);
       background: linear-gradient(135deg, var(--blue-600), var(--blue-400));
-      box-shadow: 0 0 0 1px rgba(56,167,255,0.42), 0 8px 28px rgba(22,119,255,0.35);
+      box-shadow: 0 0 0 1px rgba(150, 150, 150, 0.42), 0 8px 28px rgba(108, 108, 108, 0.35);
       transform: translateX(-50%);
     }
 
@@ -1062,7 +1064,7 @@
     ========================================================= */
     .projects {
       background:
-        linear-gradient(180deg, transparent, rgba(22,119,255,0.045), transparent);
+        linear-gradient(180deg, transparent, rgba(108, 108, 108, 0.045), transparent);
     }
 
     .project-list {
@@ -1076,7 +1078,7 @@
       overflow: hidden;
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      background: linear-gradient(145deg, rgba(13,38,70,0.95), rgba(5,16,30,0.96));
+      background: linear-gradient(145deg, rgba(35, 35, 35, 0.95), rgba(15, 15, 15, 0.96));
       box-shadow: var(--shadow-sm);
       transition:
         transform var(--transition),
@@ -1108,10 +1110,10 @@
       align-items: center;
       gap: 0.5rem;
       padding: 0.4rem 0.65rem;
-      border: 1px solid rgba(87,214,161,0.2);
+      border: 1px solid rgba(183, 183, 183, 0.2);
       border-radius: var(--radius-pill);
-      color: #b9f5dc;
-      background: rgba(87,214,161,0.08);
+      color: #e6e6e6;
+      background: rgba(183, 183, 183, 0.08);
       font-size: 0.73rem;
       font-weight: 850;
       letter-spacing: 0.06em;
@@ -1180,14 +1182,14 @@
       border-radius: 50%;
       content: "";
       background: var(--blue-400);
-      box-shadow: 0 0 0 4px rgba(56,167,255,0.09);
+      box-shadow: 0 0 0 4px rgba(150, 150, 150, 0.09);
     }
 
     .outcome-card {
       padding: 1rem;
-      border: 1px solid rgba(56,167,255,0.18);
+      border: 1px solid rgba(150, 150, 150, 0.18);
       border-radius: var(--radius-sm);
-      background: rgba(22,119,255,0.07);
+      background: rgba(108, 108, 108, 0.07);
     }
 
     .outcome-card p {
@@ -1226,8 +1228,8 @@
       overflow: hidden;
       border-left: 1px solid var(--border);
       background:
-        radial-gradient(circle at 68% 23%, rgba(56,167,255,0.25), transparent 29%),
-        linear-gradient(145deg, rgba(16,53,97,0.75), rgba(3,11,22,0.95));
+        radial-gradient(circle at 68% 23%, rgba(150, 150, 150, 0.25), transparent 29%),
+        linear-gradient(145deg, rgba(48, 48, 48, 0.75), rgba(10, 10, 10, 0.95));
     }
 
     .project-visual::before {
@@ -1236,8 +1238,8 @@
       content: "";
       opacity: 0.46;
       background-image:
-        linear-gradient(rgba(185,227,255,0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(185,227,255,0.06) 1px, transparent 1px);
+        linear-gradient(rgba(220, 220, 220, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(220, 220, 220, 0.06) 1px, transparent 1px);
       background-size: 32px 32px;
     }
 
@@ -1260,9 +1262,9 @@
 
     .result-card {
       padding: 0.85rem;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 13px;
-      background: rgba(3,10,20,0.78);
+      background: rgba(9, 9, 9, 0.78);
       backdrop-filter: blur(10px);
     }
 
@@ -1285,7 +1287,7 @@
     .future-project {
       border-style: dashed;
       background:
-        linear-gradient(145deg, rgba(22,119,255,0.07), rgba(255,255,255,0.025));
+        linear-gradient(145deg, rgba(108, 108, 108, 0.07), rgba(255, 255, 255, 0.025));
     }
 
     .future-project .project-visual {
@@ -1308,7 +1310,7 @@
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
       background:
-        linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+        linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.025));
       box-shadow: var(--shadow-sm);
       transition: transform var(--transition), border-color var(--transition);
     }
@@ -1329,10 +1331,10 @@
       height: 48px;
       margin-bottom: 1.2rem;
       place-items: center;
-      border: 1px solid rgba(56,167,255,0.18);
+      border: 1px solid rgba(150, 150, 150, 0.18);
       border-radius: 15px;
       color: var(--blue-200);
-      background: rgba(22,119,255,0.11);
+      background: rgba(108, 108, 108, 0.11);
     }
 
     .achievement-icon svg {
@@ -1368,7 +1370,7 @@
       align-content: center;
       padding: 1rem;
       text-align: center;
-      background: rgba(8, 25, 47, 0.96);
+      background: rgba(23, 23, 23, 0.96);
     }
 
     .metric-item strong {
@@ -1399,8 +1401,8 @@
       border: 1px solid var(--border-strong);
       border-radius: var(--radius-lg);
       background:
-        radial-gradient(circle at 80% 10%, rgba(56,167,255,0.18), transparent 28%),
-        linear-gradient(135deg, rgba(10,43,80,0.96), rgba(4,14,27,0.98));
+        radial-gradient(circle at 80% 10%, rgba(150, 150, 150, 0.18), transparent 28%),
+        linear-gradient(135deg, rgba(39, 39, 39, 0.96), rgba(13, 13, 13, 0.98));
       box-shadow: var(--shadow-md);
     }
 
@@ -1437,7 +1439,7 @@
     ========================================================= */
     .contact {
       background:
-        linear-gradient(180deg, transparent, rgba(22,119,255,0.05), transparent);
+        linear-gradient(180deg, transparent, rgba(108, 108, 108, 0.05), transparent);
     }
 
     .contact-grid {
@@ -1459,7 +1461,7 @@
       padding: 1rem;
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
-      background: rgba(255,255,255,0.035);
+      background: rgba(255, 255, 255, 0.035);
       transition:
         transform var(--transition-fast),
         border-color var(--transition-fast),
@@ -1468,7 +1470,7 @@
 
     .social-card:hover {
       border-color: var(--border-strong);
-      background: rgba(56,167,255,0.07);
+      background: rgba(150, 150, 150, 0.07);
       transform: translateX(4px);
     }
 
@@ -1480,7 +1482,7 @@
       place-items: center;
       border-radius: 13px;
       color: var(--blue-200);
-      background: rgba(22,119,255,0.13);
+      background: rgba(108, 108, 108, 0.13);
     }
 
     .social-icon svg {
@@ -1511,7 +1513,7 @@
       padding: clamp(1.2rem, 3vw, 2rem);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.025));
       box-shadow: var(--shadow-sm);
     }
 
@@ -1539,10 +1541,10 @@
     .form-field input,
     .form-field textarea {
       width: 100%;
-      border: 1px solid rgba(185,227,255,0.16);
+      border: 1px solid rgba(220, 220, 220, 0.16);
       border-radius: 13px;
       color: var(--white);
-      background: rgba(3,10,20,0.55);
+      background: rgba(9, 9, 9, 0.55);
       transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
     }
 
@@ -1559,14 +1561,14 @@
 
     .form-field input::placeholder,
     .form-field textarea::placeholder {
-      color: #708aa5;
+      color: #868686;
     }
 
     .form-field input:focus,
     .form-field textarea:focus {
       border-color: var(--blue-400);
       outline: 0;
-      box-shadow: 0 0 0 4px rgba(56,167,255,0.1);
+      box-shadow: 0 0 0 4px rgba(150, 150, 150, 0.1);
     }
 
     .form-actions {
@@ -1595,7 +1597,7 @@
       position: relative;
       padding-block: 3rem 1.3rem;
       border-top: 1px solid var(--border);
-      background: rgba(3,10,20,0.72);
+      background: rgba(9, 9, 9, 0.72);
     }
 
     .footer-grid {
@@ -1649,7 +1651,7 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       color: var(--blue-200);
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
       transition:
         transform var(--transition-fast),
         border-color var(--transition-fast),
@@ -1674,7 +1676,7 @@
       gap: 1rem;
       margin-top: 2.5rem;
       padding-top: 1.2rem;
-      border-top: 1px solid rgba(185,227,255,0.09);
+      border-top: 1px solid rgba(220, 220, 220, 0.09);
       color: var(--muted-2);
       font-size: 0.82rem;
     }
@@ -1691,7 +1693,7 @@
       border: 1px solid var(--border-strong);
       border-radius: 15px;
       color: var(--white);
-      background: rgba(6,20,38,0.92);
+      background: rgba(18, 18, 18, 0.92);
       box-shadow: var(--shadow-md);
       cursor: pointer;
       opacity: 0;
@@ -1778,7 +1780,7 @@
         max-height: calc(100svh - var(--header-height));
         overflow-y: auto;
         border-bottom: 1px solid var(--border);
-        background: rgba(3,10,20,0.97);
+        background: rgba(9, 9, 9, 0.97);
         box-shadow: var(--shadow-md);
         opacity: 0;
         pointer-events: none;
@@ -1893,7 +1895,7 @@
         right: auto;
         left: -10px;
         border-width: 10px 10px 10px 0;
-        border-color: transparent rgba(185,227,255,0.14) transparent transparent;
+        border-color: transparent rgba(220, 220, 220, 0.14) transparent transparent;
         transform: none;
       }
 
@@ -2137,6 +2139,668 @@
       }
     }
   </style>
+
+  <style id="reference-inspired-redesign">
+/* =========================================================
+   REFERENCE-INSPIRED REDESIGN
+   Original aerospace portfolio layout for Ahsanul Resam.
+   Inspired by the reference site's clear welcome, academic
+   profile, achievement-first storytelling, project gallery,
+   and simple journey flow. No source code is copied.
+========================================================= */
+
+:root {
+  --navy-950: #0a0a0a;
+  --navy-900: #141414;
+  --navy-850: #1b1b1b;
+  --navy-800: #262626;
+  --blue-600: #626262;
+  --blue-500: #7c7c7c;
+  --blue-400: #9d9d9d;
+  --blue-300: #bebebe;
+  --blue-200: #dcdcdc;
+  --blue-100: #efefef;
+  --blue-050: #f7f7f7;
+  --white: #ffffff;
+  --text: #202020;
+  --muted: #707070;
+  --muted-2: #a1a1a1;
+  --success: #8c8c8c;
+  --warning: #aeaeae;
+  --danger: #717171;
+  --bg: #fafafa;
+  --bg-soft: #f4f4f4;
+  --surface: #ffffff;
+  --surface-strong: #ffffff;
+  --surface-light: #f9f9f9;
+  --border: #e6e6e6;
+  --border-strong: #c8c8c8;
+  --shadow-sm: 0 8px 24px rgba(49, 49, 49, .08);
+  --shadow-md: 0 24px 65px rgba(41, 41, 41, .15);
+  --shadow-blue: 0 20px 55px rgba(98, 98, 98, .20);
+  --radius-sm: 13px;
+  --radius-md: 21px;
+  --radius-lg: 31px;
+  --radius-pill: 999px;
+  --container: 1180px;
+  --header-height: 76px;
+  --section-space: clamp(5.3rem, 9vw, 8.5rem);
+  --transition-fast: 180ms ease;
+  --transition: 320ms cubic-bezier(.2, .8, .2, 1);
+}
+
+body {
+  color: var(--text);
+  background: var(--bg);
+}
+
+p { color: var(--muted); }
+
+section { overflow: clip; }
+
+.section-heading { max-width: 820px; }
+
+.section-heading::before {
+  display: inline-flex;
+  margin-bottom: .85rem;
+  color: var(--blue-600);
+  font-size: .73rem;
+  font-weight: 850;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  content: "AHSANUL RESAM / PORTFOLIO";
+}
+
+.section-title {
+  color: var(--navy-900);
+  font-size: clamp(2.25rem, 5.5vw, 4.7rem);
+  letter-spacing: -.055em;
+}
+
+.section-subtitle { color: var(--muted); }
+
+.eyebrow { display: none; }
+
+.surface,
+.skill-group,
+.info-card,
+.timeline-card,
+.project-card,
+.achievement-card,
+.contact-form,
+.social-card {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.btn {
+  min-height: 50px;
+  font-weight: 820;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--blue-600), var(--blue-400));
+  box-shadow: 0 14px 34px rgba(98, 98, 98, .25);
+}
+
+.btn-secondary {
+  color: var(--navy-900);
+  border-color: var(--border);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  color: var(--blue-600);
+  border-color: var(--blue-300);
+  background: #ffffff;
+}
+
+.tag {
+  color: #3f3f3f;
+  border-color: #e5e5e5;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid transparent;
+  background: rgba(250, 250, 250, .82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.site-header.scrolled {
+  border-color: rgba(223, 223, 223, .9);
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 10px 34px rgba(51, 51, 51, .08);
+}
+
+.brand { color: var(--navy-900); }
+
+.brand-mark {
+  border: 0;
+  border-radius: 15px;
+  background: linear-gradient(145deg, var(--blue-600), var(--blue-400));
+  box-shadow: 0 10px 26px rgba(98, 98, 98, .24);
+}
+
+.brand-text small { color: var(--muted); }
+
+.nav-link { color: var(--muted); }
+.nav-link:hover,
+.nav-link.active { color: var(--blue-600); }
+.nav-link::after { background: var(--blue-600); }
+
+.menu-toggle {
+  color: var(--navy-900);
+  border-color: var(--border);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+/* HERO */
+.hero {
+  min-height: 100svh;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 83% 16%, rgba(137, 137, 137, .26), transparent 26rem),
+    radial-gradient(circle at 12% 80%, rgba(98, 98, 98, .17), transparent 29rem),
+    linear-gradient(135deg, var(--navy-950), var(--navy-900) 52%, #282828);
+}
+
+.hero::before {
+  opacity: .17;
+  background-size: 58px 58px;
+}
+
+.hero::after {
+  position: absolute;
+  z-index: 0;
+  top: 13%;
+  left: 50%;
+  color: transparent;
+  font-size: clamp(7rem, 20vw, 18rem);
+  font-weight: 950;
+  line-height: .9;
+  letter-spacing: -.09em;
+  white-space: nowrap;
+  content: "WELCOME";
+  -webkit-text-stroke: 1px rgba(255, 255, 255, .075);
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+.hero-orbit {
+  z-index: 0;
+  border-color: rgba(190, 190, 190, .11);
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  grid-template-columns: minmax(0, 1.05fr) minmax(370px, .75fr);
+}
+
+.hero-copy { z-index: 3; }
+
+.hero-kicker {
+  padding: 0;
+  border: 0;
+  color: var(--blue-200);
+  background: transparent;
+  letter-spacing: .15em;
+}
+
+.hero h1 {
+  margin-bottom: .75rem;
+  font-size: clamp(3.4rem, 8vw, 7.4rem);
+  letter-spacing: -.075em;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: clamp(1.18rem, 2.5vw, 1.75rem);
+}
+
+.hero-tagline { color: #c7c7c7; }
+.availability { color: #c7c7c7; }
+
+.hero-visual { min-height: 610px; }
+
+.flight-console {
+  top: 50%;
+  left: 50%;
+  width: min(92%, 500px);
+  aspect-ratio: 1;
+  inset: auto;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 72% 22%, rgba(142, 142, 142, .28), transparent 29%),
+    linear-gradient(145deg, rgba(41, 41, 41, .92), rgba(10, 10, 10, .84));
+  box-shadow: 0 35px 90px rgba(0, 0, 0, .38);
+  transform: translate(-50%, -50%);
+}
+
+.flight-console::before {
+  border-radius: inherit;
+  mask-image: radial-gradient(circle, black 0 68%, transparent 76%);
+}
+
+.console-topbar {
+  top: 15%;
+  right: 16%;
+  left: 16%;
+}
+
+.aircraft-illustration {
+  top: 17%;
+  left: 8%;
+  width: 84%;
+}
+
+.telemetry-grid {
+  right: 11%;
+  bottom: 10%;
+  left: 11%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.telemetry-card {
+  border-color: rgba(255, 255, 255, .13);
+  background: rgba(10, 10, 10, .73);
+}
+
+.floating-chip {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, .14);
+  background: rgba(13, 13, 13, .80);
+}
+
+.chip-one { top: 8%; right: -2%; }
+.chip-two { bottom: 14%; left: -5%; }
+
+/* ABOUT */
+.about { background: #ffffff; }
+
+.about-grid {
+  grid-template-columns: minmax(300px, .72fr) minmax(0, 1.12fr);
+  align-items: center;
+}
+
+.about-copy { grid-column: 2; }
+.profile-stage {
+  position: relative;
+  top: auto;
+  grid-column: 1;
+  grid-row: 1;
+  min-height: 600px;
+}
+
+.about-copy .section-heading::before { content: "01 / ABOUT ME"; }
+.about-copy p { color: var(--muted); }
+
+.profile-backdrop {
+  inset: 4% 5% 2% 0;
+  border-color: #e1e1e1;
+  border-radius: 43px;
+  background: linear-gradient(145deg, #f3f3f3, #e2e2e2);
+  transform: rotate(-3deg);
+}
+
+.profile-frame {
+  min-height: 560px;
+  border: 8px solid #ffffff;
+  border-radius: 38px;
+  background: linear-gradient(160deg, #e9e9e9, #c4c4c4);
+  box-shadow: var(--shadow-md);
+}
+
+.profile-label {
+  border-color: #e4e4e4;
+  color: var(--text);
+  background: rgba(255, 255, 255, .93);
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-label strong { color: var(--navy-900); }
+.profile-label span { color: var(--blue-600); }
+.profile-label-icon { color: var(--blue-600); background: var(--blue-050); }
+
+.info-grid { gap: .75rem; }
+.info-card {
+  border-color: var(--border);
+  background: #fdfdfd;
+  box-shadow: 0 4px 16px rgba(54, 54, 54, .045);
+}
+.info-card span { color: var(--muted-2); }
+.info-card strong { color: var(--navy-900); }
+
+.skills-wrap { margin-top: 6rem; }
+.skills-wrap .section-heading::before { content: "02 / TECHNICAL EXPERTISE"; }
+
+.skills-grid { gap: 1rem; }
+.skill-group {
+  border-color: var(--border);
+  background: #fdfdfd;
+  box-shadow: var(--shadow-sm);
+}
+.skill-group:hover {
+  border-color: var(--blue-300);
+  transform: translateY(-5px);
+}
+.skill-group h3 { color: var(--navy-900); }
+.skill-group h3 svg { color: var(--blue-600); }
+
+/* JOURNEY */
+.journey {
+  background: linear-gradient(180deg, var(--bg-soft), var(--bg));
+}
+
+.journey .section-heading::before { content: "03 / DEVELOPMENT PATH"; }
+
+.timeline { max-width: 980px; }
+.timeline::before {
+  left: 25px;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--blue-400) 7%, var(--blue-200) 93%, transparent);
+  transform: none;
+}
+
+.timeline-item,
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even) {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-card,
+.timeline-item:nth-child(even) .timeline-card {
+  grid-column: 2;
+}
+
+.timeline-node {
+  position: relative;
+  left: auto;
+  grid-column: 1;
+  width: 54px;
+  height: 54px;
+  border: 7px solid var(--bg-soft);
+  color: #ffffff;
+  background: linear-gradient(145deg, var(--blue-600), var(--blue-400));
+  box-shadow: 0 10px 28px rgba(98, 98, 98, .24);
+  transform: none;
+}
+
+.timeline-card {
+  grid-column: 2;
+  padding: 1.25rem 1.35rem;
+  border-color: var(--border);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.timeline-card:hover {
+  border-color: var(--blue-300);
+  transform: translateX(5px);
+}
+
+.timeline-item:nth-child(odd) .timeline-card::after,
+.timeline-item:nth-child(even) .timeline-card::after,
+.timeline-card::after { display: none; }
+
+.timeline-card h3 { color: var(--navy-900); }
+.timeline-card p { color: var(--muted); }
+.timeline-index { color: var(--blue-600); }
+
+/* PROJECTS */
+.projects { background: #ffffff; }
+.projects .section-heading::before { content: "04 / SELECTED ENGINEERING WORK"; }
+.project-list { gap: 1.2rem; }
+
+.project-card {
+  grid-template-columns: minmax(0, 1.12fr) minmax(330px, .72fr);
+  border-color: var(--border);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.project-card:hover {
+  border-color: var(--blue-300);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-7px);
+}
+
+.project-content { padding: clamp(1.35rem, 3.6vw, 2.4rem); }
+.project-status {
+  color: var(--blue-600);
+  border-color: #e0e0e0;
+  background: var(--blue-050);
+}
+.project-number { color: var(--muted-2); }
+.project-card h3 { color: var(--navy-900); }
+.project-overview,
+.check-list li,
+.outcome-card p { color: var(--muted); }
+.project-block h4 { color: var(--blue-600); }
+.outcome-card {
+  border-color: #e2e2e2;
+  background: #f7f7f7;
+}
+.project-link { color: var(--blue-600); }
+.project-link:hover { color: var(--navy-900); }
+
+.project-visual {
+  border-left-color: var(--border);
+  background:
+    radial-gradient(circle at 68% 23%, rgba(157, 157, 157, .28), transparent 29%),
+    linear-gradient(145deg, var(--navy-900), #2e2e2e);
+}
+
+.future-project {
+  border-style: dashed;
+  background: #fdfdfd;
+}
+
+/* ACHIEVEMENTS */
+#achievements {
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(131, 131, 131, .20), transparent 24rem),
+    linear-gradient(135deg, var(--navy-950), var(--navy-800));
+}
+
+#achievements .section-heading::before {
+  color: var(--blue-300);
+  content: "05 / KEY ACHIEVEMENTS";
+}
+
+#achievements .section-title { color: #ffffff; }
+#achievements .section-subtitle { color: #c6c6c6; }
+
+.achievement-grid { gap: 1rem; }
+.achievement-card {
+  min-height: 235px;
+  border-color: rgba(255, 255, 255, .13);
+  background: rgba(255, 255, 255, .055);
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.achievement-card:hover {
+  border-color: rgba(190, 190, 190, .38);
+  background: rgba(255, 255, 255, .085);
+}
+
+.achievement-icon {
+  color: var(--blue-200);
+  border-color: rgba(190, 190, 190, .22);
+  background: rgba(98, 98, 98, .13);
+}
+.achievement-card h3 { color: #ffffff; }
+.achievement-card p { color: #c5c5c5; }
+.metrics-band {
+  border-color: rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .12);
+}
+.metric-item { background: rgba(10, 10, 10, .67); }
+.metric-item strong { color: #ffffff; }
+.metric-item span { color: #a2a2a2; }
+
+/* PHILOSOPHY */
+.philosophy { background: #ffffff; }
+.quote-card {
+  border-color: rgba(255, 255, 255, .14);
+  border-radius: 42px;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(157, 157, 157, .24), transparent 29%),
+    linear-gradient(135deg, var(--navy-950), var(--navy-800));
+}
+.quote-card blockquote { color: #ffffff; }
+.quote-card figcaption { color: var(--blue-300); }
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(180deg, var(--bg-soft), var(--bg));
+}
+.contact .section-heading::before { content: "06 / LET'S CONNECT"; }
+
+.contact-grid { grid-template-columns: minmax(300px, .72fr) minmax(0, 1.1fr); }
+.social-card {
+  border-color: var(--border);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+.social-card:hover {
+  border-color: var(--blue-300);
+  background: #ffffff;
+}
+.social-icon { color: var(--blue-600); background: var(--blue-050); }
+.social-card strong { color: var(--navy-900); }
+.social-card span { color: var(--muted); }
+.social-arrow { color: var(--blue-600); }
+
+.contact-form {
+  border-color: var(--border);
+  background: #ffffff;
+  box-shadow: var(--shadow-md);
+}
+.form-field label { color: #3f3f3f; }
+.form-field input,
+.form-field textarea {
+  color: var(--text);
+  border-color: var(--border);
+  background: #fdfdfd;
+}
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--blue-500);
+  box-shadow: 0 0 0 4px rgba(98, 98, 98, .09);
+}
+.form-notice { color: var(--blue-600); }
+
+/* FOOTER */
+.site-footer {
+  color: #ffffff;
+  border-top-color: rgba(255, 255, 255, .08);
+  background: var(--navy-950);
+}
+.site-footer .brand { color: #ffffff; }
+.site-footer .brand-text small { color: #939393; }
+.footer-brand p,
+.footer-links a,
+.footer-bottom { color: #969696; }
+.footer-group h3 { color: #ffffff; }
+.footer-social a {
+  color: var(--blue-200);
+  border-color: rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .05);
+}
+.footer-bottom { border-top-color: rgba(255, 255, 255, .09); }
+
+.back-to-top {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, .13);
+  background: rgba(20, 20, 20, .94);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1040px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(330px, .68fr); }
+  .hero-visual { min-height: 540px; }
+  .flight-console { width: min(94%, 465px); }
+}
+
+@media (max-width: 900px) {
+  .site-nav {
+    border-bottom-color: var(--border);
+    background: rgba(255, 255, 255, .98);
+  }
+  .nav-link { color: var(--muted); }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { min-height: 560px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-copy { grid-column: 1; }
+  .profile-stage {
+    grid-column: 1;
+    grid-row: 1;
+    width: min(100%, 520px);
+    min-height: 580px;
+  }
+  .timeline::before { left: 25px; }
+  .timeline-item { grid-template-columns: 58px 1fr; }
+  .timeline-node { left: auto; }
+  .timeline-item:nth-child(odd) .timeline-card,
+  .timeline-item:nth-child(even) .timeline-card { grid-column: 2; }
+  .project-card { grid-template-columns: 1fr; }
+  .project-visual {
+    min-height: 390px;
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .hero::after { top: 15%; }
+  .hero h1 { font-size: clamp(3rem, 16vw, 5rem); }
+  .hero-visual { min-height: 440px; }
+  .flight-console { width: min(96%, 390px); }
+  .console-topbar { top: 13%; right: 15%; left: 15%; }
+  .telemetry-grid {
+    right: 13%;
+    bottom: 8%;
+    left: 13%;
+    grid-template-columns: 1fr;
+  }
+  .telemetry-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .54rem .7rem;
+  }
+  .telemetry-card strong { margin-top: 0; font-size: .82rem; }
+  .profile-stage { min-height: 505px; }
+  .profile-frame,
+  .profile-placeholder { min-height: 485px; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .project-visual { min-height: 330px; }
+  .result-grid { grid-template-columns: 1fr; }
+  .achievement-grid { grid-template-columns: 1fr; }
+  .achievement-card,
+  .achievement-card:nth-child(4),
+  .achievement-card:nth-child(5) { grid-column: 1; }
+}
+
+  </style>
 </head>
 
 <body>
@@ -2171,13 +2835,13 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <ul class="nav-list">
           <li><a class="nav-link active" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">Who I Am</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#journey">Journey</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
           <li><a class="nav-link" href="#achievements">Achievements</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
           <li>
-            <a class="btn btn-primary nav-cta" href="#contact">Let’s Connect</a>
+            <a class="btn btn-primary nav-cta" href="#contact">Connect With Me</a>
           </li>
         </ul>
       </nav>
@@ -2240,36 +2904,36 @@
             <svg class="aircraft-illustration" viewBox="0 0 520 430" role="img" aria-label="Fixed-wing aircraft following an autonomous waypoint path">
               <defs>
                 <linearGradient id="aircraftGradient" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#EAF6FF"/>
-                  <stop offset="0.55" stop-color="#76C6FF"/>
-                  <stop offset="1" stop-color="#1677FF"/>
+                  <stop offset="0" stop-color="#f4f4f4"/>
+                  <stop offset="0.55" stop-color="#b9b9b9"/>
+                  <stop offset="1" stop-color="#6c6c6c"/>
                 </linearGradient>
                 <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0" stop-color="#38A7FF" stop-opacity=".24"/>
-                  <stop offset="1" stop-color="#38A7FF" stop-opacity="0"/>
+                  <stop offset="0" stop-color="#969696" stop-opacity=".24"/>
+                  <stop offset="1" stop-color="#969696" stop-opacity="0"/>
                 </radialGradient>
               </defs>
 
               <circle cx="266" cy="212" r="162" fill="url(#radarGlow)"/>
-              <circle cx="266" cy="212" r="112" fill="none" stroke="#B9E3FF" stroke-opacity=".12"/>
-              <circle cx="266" cy="212" r="72" fill="none" stroke="#B9E3FF" stroke-opacity=".11"/>
-              <path d="M92 330C157 290 184 338 243 272C308 199 349 150 445 112" fill="none" stroke="#38A7FF" stroke-width="3" stroke-linecap="round" class="flight-path"/>
-              <circle cx="92" cy="330" r="7" fill="#57D6A1"/>
-              <circle cx="243" cy="272" r="7" fill="#38A7FF"/>
-              <circle cx="445" cy="112" r="7" fill="#FFD477"/>
-              <circle cx="92" cy="330" r="15" fill="none" stroke="#57D6A1" stroke-opacity=".3"/>
-              <circle cx="243" cy="272" r="15" fill="none" stroke="#38A7FF" stroke-opacity=".3"/>
-              <circle cx="445" cy="112" r="15" fill="none" stroke="#FFD477" stroke-opacity=".3"/>
+              <circle cx="266" cy="212" r="112" fill="none" stroke="#dcdcdc" stroke-opacity=".12"/>
+              <circle cx="266" cy="212" r="72" fill="none" stroke="#dcdcdc" stroke-opacity=".11"/>
+              <path d="M92 330C157 290 184 338 243 272C308 199 349 150 445 112" fill="none" stroke="#969696" stroke-width="3" stroke-linecap="round" class="flight-path"/>
+              <circle cx="92" cy="330" r="7" fill="#b7b7b7"/>
+              <circle cx="243" cy="272" r="7" fill="#969696"/>
+              <circle cx="445" cy="112" r="7" fill="#d6d6d6"/>
+              <circle cx="92" cy="330" r="15" fill="none" stroke="#b7b7b7" stroke-opacity=".3"/>
+              <circle cx="243" cy="272" r="15" fill="none" stroke="#969696" stroke-opacity=".3"/>
+              <circle cx="445" cy="112" r="15" fill="none" stroke="#d6d6d6" stroke-opacity=".3"/>
 
               <g transform="translate(265 210) rotate(-22)">
                 <path d="M0-132c8 0 13 8 13 19v75l94 58c7 4 10 10 8 17l-3 11-99-30v51l31 22v13L0 92l-44 12V91l31-22V18l-99 30-3-11c-2-7 1-13 8-17l94-58v-75c0-11 5-19 13-19Z" fill="url(#aircraftGradient)"/>
-                <path d="M0-116v190" stroke="#FFFFFF" stroke-opacity=".34" stroke-width="2"/>
-                <path d="M-81 26h162" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="2"/>
+                <path d="M0-116v190" stroke="#ffffff" stroke-opacity=".34" stroke-width="2"/>
+                <path d="M-81 26h162" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/>
               </g>
 
-              <path d="M48 104h96M48 118h60M385 330h78M410 344h53" stroke="#B9E3FF" stroke-opacity=".2" stroke-width="2" stroke-linecap="round"/>
-              <text x="49" y="92" fill="#AFC4DA" font-size="12" font-family="system-ui">NAV / CONTROL</text>
-              <text x="385" y="317" fill="#AFC4DA" font-size="12" font-family="system-ui">WAYPOINT TRACK</text>
+              <path d="M48 104h96M48 118h60M385 330h78M410 344h53" stroke="#dcdcdc" stroke-opacity=".2" stroke-width="2" stroke-linecap="round"/>
+              <text x="49" y="92" fill="#c1c1c1" font-size="12" font-family="system-ui">NAV / CONTROL</text>
+              <text x="385" y="317" fill="#c1c1c1" font-size="12" font-family="system-ui">WAYPOINT TRACK</text>
             </svg>
 
             <div class="telemetry-grid" aria-hidden="true">
@@ -2316,7 +2980,7 @@
           <div class="about-copy">
             <div class="section-heading reveal">
               <span class="eyebrow">Profile</span>
-              <h2 class="section-title" id="about-heading">Who I Am</h2>
+              <h2 class="section-title" id="about-heading">About</h2>
             </div>
 
             <div class="reveal reveal-delay-1">
@@ -2386,13 +3050,11 @@
             <div class="profile-backdrop" aria-hidden="true"></div>
             <div class="profile-frame">
               <!-- Replace the placeholder below with your profile photo URL or file path -->
-              
               <img
                 class="profile-placeholder"
                 src="assets/profile.jpeg"
                 alt="Portrait of Ahsanul Resam"
               >
-        
               <div class="profile-label">
                 <div>
                   <span>Aeronautical Engineer</span>
@@ -2504,7 +3166,7 @@
       <div class="container">
         <div class="section-heading centered reveal">
           <span class="eyebrow">Development Path</span>
-          <h2 class="section-title" id="journey-heading">My Journey</h2>
+          <h2 class="section-title" id="journey-heading">Engineering Journey</h2>
           <p class="section-subtitle">
             From learning the fundamentals of aircraft engineering to developing
             and validating an autonomous fixed-wing UAV control system.
@@ -2727,23 +3389,23 @@
               <svg viewBox="0 0 390 330" role="img" aria-label="Aircraft, controller, and waypoint system diagram">
                 <defs>
                   <linearGradient id="projectPlane" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#FFFFFF"/>
-                    <stop offset="1" stop-color="#38A7FF"/>
+                    <stop offset="0" stop-color="#ffffff"/>
+                    <stop offset="1" stop-color="#969696"/>
                   </linearGradient>
                 </defs>
-                <path d="M48 255C106 216 123 275 178 207c50-62 88-104 158-120" fill="none" stroke="#38A7FF" stroke-width="3" stroke-dasharray="9 10"/>
-                <circle cx="48" cy="255" r="7" fill="#57D6A1"/>
-                <circle cx="178" cy="207" r="7" fill="#38A7FF"/>
-                <circle cx="336" cy="87" r="7" fill="#FFD477"/>
+                <path d="M48 255C106 216 123 275 178 207c50-62 88-104 158-120" fill="none" stroke="#969696" stroke-width="3" stroke-dasharray="9 10"/>
+                <circle cx="48" cy="255" r="7" fill="#b7b7b7"/>
+                <circle cx="178" cy="207" r="7" fill="#969696"/>
+                <circle cx="336" cy="87" r="7" fill="#d6d6d6"/>
                 <g transform="translate(203 159) rotate(-25)">
                   <path d="M0-82c6 0 9 6 9 14v43l61 39c5 3 7 7 5 12l-2 7-64-20v31l20 14v9L0 59l-29 8v-9l20-14V13l-64 20-2-7c-2-5 0-9 5-12L-9-25v-43c0-8 3-14 9-14Z" fill="url(#projectPlane)"/>
                 </g>
-                <rect x="55" y="61" width="92" height="60" rx="14" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
-                <text x="101" y="86" fill="#B9E3FF" font-family="system-ui" font-size="11" text-anchor="middle">STATE-SPACE</text>
-                <text x="101" y="103" fill="#FFFFFF" font-family="system-ui" font-size="15" font-weight="700" text-anchor="middle">A · B · C · D</text>
-                <rect x="246" y="235" width="94" height="58" rx="14" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
-                <text x="293" y="260" fill="#B9E3FF" font-family="system-ui" font-size="11" text-anchor="middle">AUTOPILOT</text>
-                <text x="293" y="278" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700" text-anchor="middle">PX4 / PIXHAWK</text>
+                <rect x="55" y="61" width="92" height="60" rx="14" fill="#121212" stroke="#969696" stroke-opacity=".45"/>
+                <text x="101" y="86" fill="#dcdcdc" font-family="system-ui" font-size="11" text-anchor="middle">STATE-SPACE</text>
+                <text x="101" y="103" fill="#ffffff" font-family="system-ui" font-size="15" font-weight="700" text-anchor="middle">A · B · C · D</text>
+                <rect x="246" y="235" width="94" height="58" rx="14" fill="#121212" stroke="#969696" stroke-opacity=".45"/>
+                <text x="293" y="260" fill="#dcdcdc" font-family="system-ui" font-size="11" text-anchor="middle">AUTOPILOT</text>
+                <text x="293" y="278" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="700" text-anchor="middle">PX4 / PIXHAWK</text>
               </svg>
 
               <div class="result-grid">
@@ -2816,18 +3478,18 @@
 
             <div class="project-visual" aria-label="Aircraft manufacturing illustration">
               <svg viewBox="0 0 390 330" role="img" aria-label="Technical aircraft structure and composite manufacturing illustration">
-                <g fill="none" stroke="#B9E3FF" stroke-opacity=".34">
+                <g fill="none" stroke="#dcdcdc" stroke-opacity=".34">
                   <path d="M45 255h300M74 74v188M316 74v188" stroke-dasharray="5 8"/>
                   <path d="M90 111h210M90 221h210"/>
                 </g>
-                <path d="M195 68 322 206l-21 18-106-54-106 54-21-18L195 68Z" fill="#1677FF" fill-opacity=".24" stroke="#76C6FF" stroke-width="2"/>
-                <path d="M195 68v102M89 224l106-54 106 54M119 174h152" fill="none" stroke="#EAF6FF" stroke-opacity=".72" stroke-width="2"/>
-                <path d="m195 170-28 83h56l-28-83Z" fill="#38A7FF" fill-opacity=".45" stroke="#B9E3FF"/>
-                <circle cx="195" cy="170" r="9" fill="#57D6A1"/>
-                <rect x="44" y="47" width="102" height="39" rx="12" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
-                <text x="95" y="71" fill="#EAF6FF" font-family="system-ui" font-size="13" text-anchor="middle">STRUCTURE</text>
-                <rect x="245" y="248" width="103" height="39" rx="12" fill="#061426" stroke="#38A7FF" stroke-opacity=".45"/>
-                <text x="296" y="272" fill="#EAF6FF" font-family="system-ui" font-size="13" text-anchor="middle">ASSEMBLY</text>
+                <path d="M195 68 322 206l-21 18-106-54-106 54-21-18L195 68Z" fill="#6c6c6c" fill-opacity=".24" stroke="#b9b9b9" stroke-width="2"/>
+                <path d="M195 68v102M89 224l106-54 106 54M119 174h152" fill="none" stroke="#f4f4f4" stroke-opacity=".72" stroke-width="2"/>
+                <path d="m195 170-28 83h56l-28-83Z" fill="#969696" fill-opacity=".45" stroke="#dcdcdc"/>
+                <circle cx="195" cy="170" r="9" fill="#b7b7b7"/>
+                <rect x="44" y="47" width="102" height="39" rx="12" fill="#121212" stroke="#969696" stroke-opacity=".45"/>
+                <text x="95" y="71" fill="#f4f4f4" font-family="system-ui" font-size="13" text-anchor="middle">STRUCTURE</text>
+                <rect x="245" y="248" width="103" height="39" rx="12" fill="#121212" stroke="#969696" stroke-opacity=".45"/>
+                <text x="296" y="272" fill="#f4f4f4" font-family="system-ui" font-size="13" text-anchor="middle">ASSEMBLY</text>
               </svg>
             </div>
           </article>
@@ -2889,18 +3551,18 @@
 
             <div class="project-visual" aria-label="Hydrogen propulsion illustration">
               <svg viewBox="0 0 390 330" role="img" aria-label="Hydrogen molecule, fuel cell, and aircraft concept illustration">
-                <circle cx="106" cy="112" r="38" fill="#1677FF" fill-opacity=".35" stroke="#76C6FF" stroke-width="2"/>
-                <circle cx="190" cy="82" r="28" fill="#38A7FF" fill-opacity=".3" stroke="#B9E3FF" stroke-width="2"/>
-                <circle cx="205" cy="161" r="30" fill="#38A7FF" fill-opacity=".3" stroke="#B9E3FF" stroke-width="2"/>
-                <path d="M136 98 164 88M138 128l39 22" stroke="#EAF6FF" stroke-width="4" stroke-linecap="round"/>
-                <text x="106" y="119" fill="#FFFFFF" font-family="system-ui" font-size="20" font-weight="700" text-anchor="middle">H₂</text>
-                <text x="190" y="88" fill="#FFFFFF" font-family="system-ui" font-size="15" text-anchor="middle">H</text>
-                <text x="205" y="167" fill="#FFFFFF" font-family="system-ui" font-size="15" text-anchor="middle">H</text>
-                <rect x="64" y="225" width="119" height="56" rx="16" fill="#061426" stroke="#38A7FF" stroke-opacity=".6"/>
-                <path d="M83 241h17v24H83zm29 0h17v24h-17zm29 0h17v24h-17z" fill="#1677FF" fill-opacity=".55" stroke="#B9E3FF"/>
-                <text x="123" y="300" fill="#AFC4DA" font-family="system-ui" font-size="11" text-anchor="middle">PEM FUEL CELL</text>
+                <circle cx="106" cy="112" r="38" fill="#6c6c6c" fill-opacity=".35" stroke="#b9b9b9" stroke-width="2"/>
+                <circle cx="190" cy="82" r="28" fill="#969696" fill-opacity=".3" stroke="#dcdcdc" stroke-width="2"/>
+                <circle cx="205" cy="161" r="30" fill="#969696" fill-opacity=".3" stroke="#dcdcdc" stroke-width="2"/>
+                <path d="M136 98 164 88M138 128l39 22" stroke="#f4f4f4" stroke-width="4" stroke-linecap="round"/>
+                <text x="106" y="119" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="700" text-anchor="middle">H₂</text>
+                <text x="190" y="88" fill="#ffffff" font-family="system-ui" font-size="15" text-anchor="middle">H</text>
+                <text x="205" y="167" fill="#ffffff" font-family="system-ui" font-size="15" text-anchor="middle">H</text>
+                <rect x="64" y="225" width="119" height="56" rx="16" fill="#121212" stroke="#969696" stroke-opacity=".6"/>
+                <path d="M83 241h17v24H83zm29 0h17v24h-17zm29 0h17v24h-17z" fill="#6c6c6c" fill-opacity=".55" stroke="#dcdcdc"/>
+                <text x="123" y="300" fill="#c1c1c1" font-family="system-ui" font-size="11" text-anchor="middle">PEM FUEL CELL</text>
                 <g transform="translate(276 214) rotate(-12)">
-                  <path d="M0-58c4 0 6 4 6 10v30l43 27c3 2 5 5 4 8l-2 5-45-14v22l14 10v6L0 40l-20 6v-6l14-10V8l-45 14-2-5c-1-3 1-6 4-8l43-27v-30c0-6 2-10 6-10Z" fill="#EAF6FF"/>
+                  <path d="M0-58c4 0 6 4 6 10v30l43 27c3 2 5 5 4 8l-2 5-45-14v22l14 10v6L0 40l-20 6v-6l14-10V8l-45 14-2-5c-1-3 1-6 4-8l43-27v-30c0-6 2-10 6-10Z" fill="#f4f4f4"/>
                 </g>
               </svg>
             </div>
@@ -2955,11 +3617,11 @@
 
             <div class="project-visual" aria-label="Future engineering project placeholder">
               <svg viewBox="0 0 390 330" role="img" aria-label="Blueprint-style future project placeholder">
-                <rect x="72" y="55" width="246" height="220" rx="24" fill="#061426" fill-opacity=".72" stroke="#38A7FF" stroke-opacity=".45" stroke-dasharray="8 10"/>
-                <circle cx="195" cy="142" r="47" fill="#1677FF" fill-opacity=".15" stroke="#76C6FF" stroke-width="2"/>
-                <path d="M195 116v52M169 142h52" stroke="#EAF6FF" stroke-width="5" stroke-linecap="round"/>
-                <path d="M116 228h158M137 245h116" stroke="#B9E3FF" stroke-opacity=".42" stroke-width="3" stroke-linecap="round"/>
-                <text x="195" y="91" fill="#AFC4DA" font-family="system-ui" font-size="12" text-anchor="middle" letter-spacing="2">NEXT ENGINEERING MILESTONE</text>
+                <rect x="72" y="55" width="246" height="220" rx="24" fill="#121212" fill-opacity=".72" stroke="#969696" stroke-opacity=".45" stroke-dasharray="8 10"/>
+                <circle cx="195" cy="142" r="47" fill="#6c6c6c" fill-opacity=".15" stroke="#b9b9b9" stroke-width="2"/>
+                <path d="M195 116v52M169 142h52" stroke="#f4f4f4" stroke-width="5" stroke-linecap="round"/>
+                <path d="M116 228h158M137 245h116" stroke="#dcdcdc" stroke-opacity=".42" stroke-width="3" stroke-linecap="round"/>
+                <text x="195" y="91" fill="#c1c1c1" font-family="system-ui" font-size="12" text-anchor="middle" letter-spacing="2">NEXT ENGINEERING MILESTONE</text>
               </svg>
             </div>
           </article>
@@ -2974,7 +3636,7 @@
       <div class="container">
         <div class="section-heading centered reveal">
           <span class="eyebrow">Milestones</span>
-          <h2 class="section-title" id="achievements-heading">Achievements and Highlights</h2>
+          <h2 class="section-title" id="achievements-heading">Key Achievements</h2>
           <p class="section-subtitle">
             Academic, technical, and practical experiences that reflect a focused
             path toward aircraft engineering and autonomous-system development.
@@ -3093,12 +3755,12 @@
           <figcaption>— Ahsanul Resam</figcaption>
 
           <svg viewBox="0 0 540 340" aria-hidden="true">
-            <path d="M20 276C132 236 139 318 234 219c84-87 121-134 278-165" fill="none" stroke="#38A7FF" stroke-width="4" stroke-dasharray="12 14"/>
-            <circle cx="20" cy="276" r="8" fill="#57D6A1"/>
-            <circle cx="234" cy="219" r="8" fill="#38A7FF"/>
-            <circle cx="512" cy="54" r="8" fill="#FFD477"/>
+            <path d="M20 276C132 236 139 318 234 219c84-87 121-134 278-165" fill="none" stroke="#969696" stroke-width="4" stroke-dasharray="12 14"/>
+            <circle cx="20" cy="276" r="8" fill="#b7b7b7"/>
+            <circle cx="234" cy="219" r="8" fill="#969696"/>
+            <circle cx="512" cy="54" r="8" fill="#d6d6d6"/>
             <g transform="translate(321 148) rotate(-27)">
-              <path d="M0-70c5 0 8 5 8 12v37l53 34c4 2 6 6 4 10l-2 6L8 12v26l17 12v7L0 50l-25 7v-7l17-12V12l-55 17-2-6c-2-4 0-8 4-10L-8-21v-37c0-7 3-12 8-12Z" fill="#EAF6FF"/>
+              <path d="M0-70c5 0 8 5 8 12v37l53 34c4 2 6 6 4 10l-2 6L8 12v26l17 12v7L0 50l-25 7v-7l17-12V12l-55 17-2-6c-2-4 0-8 4-10L-8-21v-37c0-7 3-12 8-12Z" fill="#f4f4f4"/>
             </g>
           </svg>
         </figure>
@@ -3112,7 +3774,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">Professional Contact</span>
-          <h2 class="section-title" id="contact-heading">Let’s Connect</h2>
+          <h2 class="section-title" id="contact-heading">Connect With Me</h2>
           <p class="section-subtitle">
             I am interested in engineering opportunities, research collaboration,
             postgraduate study, UAV development, flight-control systems, and
@@ -3147,51 +3809,7 @@
 
             <a
               class="social-card"
-              href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Ahsanul Resam on Instagram"
-            >
-              <span class="social-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
-                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
-                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
-                </svg>
-              </span>
-              <span>
-                <strong>Instagram</strong>
-                <span>Projects, events, and personal updates</span>
-              </span>
-              <svg class="social-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-
-            <a
-              class="social-card"
-              href="https://www.facebook.com/YOUR-FACEBOOK-USERNAME"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Ahsanul Resam on Facebook"
-            >
-              <span class="social-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M13.7 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.5v3h2.8v8h3.4Z"/>
-                </svg>
-              </span>
-              <span>
-                <strong>Facebook</strong>
-                <span>Community and personal connection</span>
-              </span>
-              <svg class="social-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-
-            <a
-              class="social-card"
-              href="mailto:YOUR-EMAIL@example.com"
+              href="mailto:ahsanul.resam.2001@gmail.com"
               aria-label="Email Ahsanul Resam"
             >
               <span class="social-icon" aria-hidden="true">
@@ -3201,7 +3819,7 @@
               </span>
               <span>
                 <strong>Email</strong>
-                <span>YOUR-EMAIL@example.com</span>
+                <span>ahsanul.resam.2001@gmail.com</span>
               </span>
               <svg class="social-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3297,7 +3915,7 @@
         <div class="footer-group">
           <h3>Quick Navigation</h3>
           <nav class="footer-links" aria-label="Footer navigation">
-            <a href="#about">Who I Am</a>
+            <a href="#about">About</a>
             <a href="#journey">Journey</a>
             <a href="#projects">Projects</a>
             <a href="#achievements">Achievements</a>
