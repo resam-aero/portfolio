@@ -5,23 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script>document.documentElement.classList.add('js');</script>
 
-<!-- ============ SEO AND SHARING METADATA ============ -->
-<!-- TODO: Replace the canonical URL below with your live deployed URL -->
 <link rel="canonical" href="https://your-portfolio-url.example/" />
 <title>Ahsanul Resam | Aeronautical Engineer & UAV Autopilot Developer</title>
 <meta name="description" content="Portfolio of Ahsanul Resam, an Aeronautical Engineering graduate specialising in fixed-wing UAV control, flight dynamics, MATLAB/Simulink, PX4, autonomous systems, and aircraft development." />
 <meta name="author" content="Ahsanul Resam" />
 <meta name="theme-color" content="#FAFAF8" />
 
-<!-- Open Graph -->
 <meta property="og:title" content="Ahsanul Resam | Aeronautical Engineer & UAV Autopilot Developer" />
 <meta property="og:description" content="Portfolio of Ahsanul Resam, an Aeronautical Engineering graduate specialising in fixed-wing UAV control, flight dynamics, MATLAB/Simulink, PX4, autonomous systems, and aircraft development." />
 <meta property="og:type" content="website" />
-<!-- TODO: Replace the Open Graph image below with your real social preview image -->
+
 <meta property="og:image" content="https://your-portfolio-url.example/og-image.jpg" />
 <meta property="og:url" content="https://your-portfolio-url.example/" />
 
-<!-- Person JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,9 +40,7 @@
 </script>
 
 <style>
-/* ============================================================
-   DESIGN SYSTEM
-   ============================================================ */
+
 :root {
   --black: #0A0A0A;
   --soft-black: #171717;
@@ -123,7 +117,6 @@ p { margin: 0; }
   border-radius: 2px;
 }
 
-/* Scroll progress bar */
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -135,7 +128,6 @@ p { margin: 0; }
   transition: width 0.1s linear;
 }
 
-/* Skip link */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -152,7 +144,6 @@ p { margin: 0; }
   top: 12px;
 }
 
-/* Reusable layout */
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -197,7 +188,6 @@ p { margin: 0; }
   line-height: 1.7;
 }
 
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -233,7 +223,6 @@ p { margin: 0; }
 }
 .btn svg { width: 16px; height: 16px; }
 
-/* Reveal on scroll */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -244,9 +233,6 @@ p { margin: 0; }
   transform: translateY(0);
 }
 
-/* ============================================================
-   HEADER AND NAVIGATION
-   ============================================================ */
 .header {
   position: fixed;
   top: 0;
@@ -371,7 +357,6 @@ p { margin: 0; }
 .nav-toggle[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); }
 .nav-toggle[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); }
 
-/* Mobile menu panel */
 .mobile-menu {
   position: fixed;
   top: var(--nav-height);
@@ -412,9 +397,6 @@ p { margin: 0; }
 .mobile-menu a .arrow { color: var(--light-gray); font-size: 18px; }
 .mobile-menu .nav-cta { margin-top: 16px; text-align: center; padding: 14px; border-radius: 4px; }
 
-/* ============================================================
-   HERO
-   ============================================================ */
 .hero {
   background: var(--black);
   color: var(--pure-white);
@@ -534,7 +516,6 @@ p { margin: 0; }
   border: 1px solid rgba(255,255,255,0.3);
 }
 
-/* Hero portrait */
 .hero-portrait {
   position: relative;
   display: flex;
@@ -562,6 +543,14 @@ p { margin: 0; }
   z-index: 3;
 }
 .portrait-svg { width: 100%; height: 100%; display: block; }
+
+.portrait-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
 
 .portrait-path {
   position: absolute;
@@ -599,9 +588,6 @@ p { margin: 0; }
   margin-top: 2px;
 }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
 .about-grid {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -662,9 +648,6 @@ p { margin: 0; }
   margin-top: 28px;
 }
 
-/* ============================================================
-   EDUCATION
-   ============================================================ */
 .education-grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -755,9 +738,6 @@ p { margin: 0; }
   line-height: 1.4;
 }
 
-/* ============================================================
-   ACHIEVEMENTS
-   ============================================================ */
 .achievements {
   background: var(--black);
   color: var(--pure-white);
@@ -825,9 +805,6 @@ p { margin: 0; }
   line-height: 1.4;
 }
 
-/* ============================================================
-   PROJECTS
-   ============================================================ */
 .project-filters {
   display: flex;
   gap: 8px;
@@ -981,7 +958,6 @@ p { margin: 0; }
 .project-link:hover { gap: 12px; }
 .project-link svg { width: 14px; height: 14px; }
 
-/* Featured project spans full width */
 .project-card.featured {
   grid-column: 1 / -1;
   display: grid;
@@ -1042,9 +1018,6 @@ p { margin: 0; }
   line-height: 1.5;
 }
 
-/* ============================================================
-   PROJECT MODAL
-   ============================================================ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -1149,9 +1122,6 @@ p { margin: 0; }
   padding-top: 20px;
 }
 
-/* ============================================================
-   SKILLS
-   ============================================================ */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1191,9 +1161,6 @@ p { margin: 0; }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .skill-tags .tag { font-size: 12px; padding: 6px 11px; background: var(--off-white); }
 
-/* ============================================================
-   JOURNEY
-   ============================================================ */
 .journey-list {
   position: relative;
   display: flex;
@@ -1255,9 +1222,6 @@ p { margin: 0; }
   max-width: 60ch;
 }
 
-/* ============================================================
-   ENGINEERING PHILOSOPHY
-   ============================================================ */
 .philosophy {
   background: var(--black);
   color: var(--pure-white);
@@ -1315,9 +1279,6 @@ p { margin: 0; }
   color: var(--light-gray);
 }
 
-/* ============================================================
-   CONTACT
-   ============================================================ */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -1437,9 +1398,6 @@ p { margin: 0; }
 .form-notice svg { width: 14px; height: 14px; flex-shrink: 0; margin-top: 2px; }
 .form-submit { width: 100%; margin-top: 6px; }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer {
   background: var(--black);
   color: var(--light-gray);
@@ -1542,9 +1500,6 @@ p { margin: 0; }
 .back-to-top:hover { background: var(--soft-black); transform: translateY(-2px); }
 .back-to-top svg { width: 18px; height: 18px; }
 
-/* ============================================================
-   RESPONSIVE STYLES
-   ============================================================ */
 @media (max-width: 980px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-portrait { order: -1; max-width: 320px; margin: 0 auto; }
@@ -1593,7 +1548,6 @@ p { margin: 0; }
   .back-to-top { right: 16px; bottom: 16px; width: 40px; height: 40px; }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -1603,16 +1557,11 @@ p { margin: 0; }
   .reveal { opacity: 1; transform: none; }
 }
 
-
-/* ============================================================
-   VISUAL & RESPONSIVE REFINEMENTS
-   ============================================================ */
 body.menu-open,
 body.modal-open {
   overflow: hidden;
 }
 
-/* Keep content readable even before reveal observers run. */
 .reveal {
   opacity: 1;
   transform: none;
@@ -1626,7 +1575,6 @@ body.modal-open {
   transform: translateY(0);
 }
 
-/* Improve click targets without changing the restrained visual style. */
 .nav-logo,
 .nav-links a {
   min-height: 44px;
@@ -1650,12 +1598,10 @@ body.modal-open {
   align-items: center;
 }
 
-/* Give the hero portrait label enough room and prevent edge clipping. */
 .hero-portrait {
   padding-bottom: 28px;
 }
 
-/* Use balanced project columns and let the future card close the grid cleanly. */
 .projects-layout {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1675,7 +1621,6 @@ body.modal-open {
   grid-column: 1 / -1;
 }
 
-/* Switch to the compact navigation before laptop widths become crowded. */
 @media (max-width: 1100px) {
   .nav-links,
   .nav > .nav-cta {
@@ -1697,7 +1642,6 @@ body.modal-open {
     min-width: 0;
   }
 
-  /* Keep the introduction first on tablets and phones. */
   .hero-portrait {
     order: initial;
     max-width: 360px;
@@ -1731,11 +1675,6 @@ body.modal-open {
   }
 }
 
-
-/* ============================================================
-   WHITE-FIRST RESTRUCTURE
-   Single profile + Mustaqim-style section flow
-   ============================================================ */
 .hero {
   background: var(--bg-white);
   color: var(--black);
@@ -1844,7 +1783,6 @@ body.modal-open {
 }
 .portrait-meta small { color: var(--light-gray); }
 
-/* Keep the whole page light. */
 #skills { background: var(--off-white) !important; }
 #journey { background: var(--bg-white); }
 #projects { background: var(--off-white); }
@@ -1920,15 +1858,10 @@ body.modal-open {
 </head>
 <body>
 
-<!-- Skip link -->
 <a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- Scroll progress -->
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-<!-- ============================================================
-     HEADER AND NAVIGATION
-     ============================================================ -->
 <header class="header" id="header">
   <div class="container">
     <nav class="nav" aria-label="Primary navigation">
@@ -2015,7 +1948,7 @@ body.modal-open {
       </div>
 
       <div class="hero-portrait reveal">
-<!-- Decorative flight path behind portrait -->
+
 <div aria-hidden="true" class="portrait-path">
 <svg preserveaspectratio="xMidYMid slice" viewbox="0 0 400 500">
 <path d="M-20 380 C 80 320, 140 200, 260 180 S 420 60, 460 -20" fill="none" stroke="rgba(255,255,255,0.35)" stroke-dasharray="3 5" stroke-width="1"></path>
@@ -2026,48 +1959,7 @@ body.modal-open {
 </svg>
 </div>
 <div class="portrait-frame">
-<!-- =======================================================
-               PORTRAIT PLACEHOLDER
-               TODO: Replace this inline SVG with a real monochrome
-               photograph of Ahsanul Resam (recommended: 4:5 ratio,
-               black-and-white or desaturated treatment).
-               Keep the oval-top frame styling for editorial effect.
-               ======================================================= -->
-<svg aria-label="Portrait illustration of Ahsanul Resam" class="portrait-svg" preserveaspectratio="xMidYMid slice" role="img" viewbox="0 0 400 500">
-<defs>
-<lineargradient id="portraitBg" x1="0" x2="0" y1="0" y2="1">
-<stop offset="0%" stop-color="#2A2A2A"></stop>
-<stop offset="100%" stop-color="#171717"></stop>
-</lineargradient>
-<lineargradient id="portraitFig" x1="0" x2="0" y1="0" y2="1">
-<stop offset="0%" stop-color="#FAFAF8"></stop>
-<stop offset="100%" stop-color="#A3A3A3"></stop>
-</lineargradient>
-</defs>
-<rect fill="url(#portraitBg)" height="500" width="400"></rect>
-<!-- Subtle horizon grid -->
-<g stroke="rgba(255,255,255,0.04)" stroke-width="1">
-<line x1="0" x2="400" y1="100" y2="100"></line>
-<line x1="0" x2="400" y1="200" y2="200"></line>
-<line x1="0" x2="400" y1="300" y2="300"></line>
-<line x1="0" x2="400" y1="400" y2="400"></line>
-<line x1="100" x2="100" y1="0" y2="500"></line>
-<line x1="200" x2="200" y1="0" y2="500"></line>
-<line x1="300" x2="300" y1="0" y2="500"></line>
-</g>
-<!-- Shoulders -->
-<path d="M60 500 C 60 380, 130 340, 200 340 C 270 340, 340 380, 340 500 Z" fill="url(#portraitFig)" opacity="0.95"></path>
-<!-- Neck -->
-<path d="M175 340 L 175 290 Q 200 305 225 290 L 225 340 Z" fill="url(#portraitFig)" opacity="0.9"></path>
-<!-- Head -->
-<ellipse cx="200" cy="220" fill="url(#portraitFig)" rx="68" ry="82"></ellipse>
-<!-- Hair -->
-<path d="M132 200 C 132 150, 165 130, 200 130 C 235 130, 268 150, 268 200 C 268 180, 250 165, 200 165 C 150 165, 132 180, 132 200 Z" fill="#0A0A0A" opacity="0.85"></path>
-<!-- Face features minimal -->
-<ellipse cx="178" cy="220" fill="#0A0A0A" opacity="0.6" rx="3" ry="4"></ellipse>
-<ellipse cx="222" cy="220" fill="#0A0A0A" opacity="0.6" rx="3" ry="4"></ellipse>
-<path d="M185 258 Q 200 264 215 258" fill="none" opacity="0.5" stroke="#0A0A0A" stroke-linecap="round" stroke-width="1.5"></path>
-</svg>
+<img src="./assets/profile.jpeg" alt="Ahsanul Resam" class="portrait-img" loading="eager" decoding="async">
 </div>
 <div class="portrait-meta">
           Ahsanul Resam
@@ -2229,7 +2121,6 @@ body.modal-open {
     <h2 class="section-title reveal">Selected Projects</h2>
     <p class="section-intro reveal">A focused selection of work spanning autonomous flight control, aircraft manufacturing, and conceptual propulsion design.</p>
 
-    <!-- Filters -->
     <div class="project-filters reveal" role="group" aria-label="Filter projects by category">
       <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
       <button class="filter-btn" data-filter="flight" aria-pressed="false">Flight Control</button>
@@ -2239,11 +2130,6 @@ body.modal-open {
 
     <div class="projects-layout" id="projectsLayout">
 
-      <!-- =====================================================
-           FEATURED PROJECT
-           TODO: Replace the placeholder project URL in data-link
-           with your real project case-study link when available.
-           ===================================================== -->
       <article class="project-card featured reveal" data-category="flight"
                data-title="Autonomous Fixed-Wing UAV Autopilot"
                data-category-label="Flight Control"
@@ -2270,9 +2156,9 @@ body.modal-open {
               <line x1="300" y1="0" x2="300" y2="400"/>
               <line x1="450" y1="0" x2="450" y2="400"/>
             </g>
-            <!-- Waypoint path -->
+
             <path d="M80 320 Q 200 220 300 240 T 520 120" fill="none" stroke="#0A0A0A" stroke-width="1.5" stroke-dasharray="6 4"/>
-            <!-- Waypoints -->
+
             <circle cx="80" cy="320" r="6" fill="#FAFAF8" stroke="#0A0A0A" stroke-width="1.5"/>
             <circle cx="80" cy="320" r="2" fill="#0A0A0A"/>
             <circle cx="300" cy="240" r="6" fill="#FAFAF8" stroke="#0A0A0A" stroke-width="1.5"/>
@@ -2282,7 +2168,7 @@ body.modal-open {
             <text x="80" y="345" font-family="Inter, sans-serif" font-size="10" fill="#666666" text-anchor="middle">WP1</text>
             <text x="300" y="265" font-family="Inter, sans-serif" font-size="10" fill="#666666" text-anchor="middle">WP2</text>
             <text x="520" y="145" font-family="Inter, sans-serif" font-size="10" fill="#666666" text-anchor="middle">WP3</text>
-            <!-- UAV aircraft -->
+
             <g transform="translate(220,275) rotate(-15)" fill="#0A0A0A">
               <path d="M0 -22 L 1.5 -10 L 2 -2 L 20 6 L 20 8 L 2 5 L 2 14 L 6 18 L 6 19 L 0 16 L -6 19 L -6 18 L -2 14 L -2 5 L -20 8 L -20 6 L -2 -2 L -1.5 -10 Z"/>
             </g>
@@ -2327,9 +2213,6 @@ body.modal-open {
         </div>
       </article>
 
-      <!-- =====================================================
-           PROJECT 2: AIAA DBF
-           ===================================================== -->
       <article class="project-card reveal" data-category="manufacturing"
                data-title="AIAA Design/Build/Fly 2024–2025"
                data-category-label="Aircraft Manufacturing"
@@ -2354,7 +2237,7 @@ body.modal-open {
               <line x1="200" y1="0" x2="200" y2="400"/>
               <line x1="400" y1="0" x2="400" y2="400"/>
             </g>
-            <!-- Aircraft side view -->
+
             <g transform="translate(300,210)" fill="#0A0A0A">
               <path d="M-180 0 L -150 -8 L -40 -14 L 100 -16 L 160 -6 L 170 0 L 160 6 L 100 16 L -40 14 L -150 8 Z"/>
               <path d="M-60 -14 L -50 -50 L -30 -50 L -20 -14 Z"/>
@@ -2362,7 +2245,7 @@ body.modal-open {
               <circle cx="140" cy="0" r="6" fill="#FAFAF8"/>
               <circle cx="140" cy="0" r="3" fill="#0A0A0A"/>
             </g>
-            <!-- Composite layer lines -->
+
             <g stroke="#0A0A0A" stroke-width="1" opacity="0.5">
               <path d="M120 250 L 480 250"/>
               <path d="M120 260 L 480 260"/>
@@ -2395,9 +2278,6 @@ body.modal-open {
         </div>
       </article>
 
-      <!-- =====================================================
-           PROJECT 3: Hydrogen PEM
-           ===================================================== -->
       <article class="project-card reveal" data-category="concept"
                data-title="Conceptual Aircraft and Hydrogen PEM Propulsion Study"
                data-category-label="Conceptual Design"
@@ -2422,20 +2302,20 @@ body.modal-open {
               <line x1="200" y1="0" x2="200" y2="400"/>
               <line x1="400" y1="0" x2="400" y2="400"/>
             </g>
-            <!-- Aircraft with hydrogen tank and fuel cell -->
+
             <g transform="translate(300,210)" fill="#0A0A0A">
-              <!-- Fuselage -->
+
               <path d="M-160 0 L -130 -10 L 60 -14 L 130 -8 L 145 0 L 130 8 L 60 14 L -130 10 Z"/>
-              <!-- Wing -->
+
               <path d="M-30 -14 L -10 -70 L 20 -70 L 30 -14 Z"/>
               <path d="M-30 14 L -10 70 L 20 70 L 30 14 Z"/>
-              <!-- Tail -->
+
               <path d="M-130 -10 L -120 -40 L -110 -40 L -100 -10 Z"/>
-              <!-- H2 tank -->
+
               <rect x="-90" y="-6" width="40" height="12" fill="none" stroke="#FAFAF8" stroke-width="1.5" stroke-dasharray="2 2"/>
               <text x="-70" y="3" font-family="Inter, sans-serif" font-size="7" fill="#FAFAF8" text-anchor="middle" font-weight="700">H₂</text>
             </g>
-            <!-- Energy flow -->
+
             <g stroke="#0A0A0A" stroke-width="1" fill="none" opacity="0.7">
               <path d="M150 280 L 220 240" stroke-dasharray="3 3"/>
               <path d="M380 240 L 450 280" stroke-dasharray="3 3"/>
@@ -2469,22 +2349,6 @@ body.modal-open {
         </div>
       </article>
 
-      <!-- =====================================================
-           FUTURE PROJECT TEMPLATE
-           To add a new project, copy this entire <article> block,
-           then replace:
-             - data-category       (flight / manufacturing / concept / all)
-             - data-title          (project title)
-             - data-status         (status label)
-             - data-overview       (short description)
-             - data-contributions  (pipe-separated list of contributions)
-             - data-tags           (comma-separated tags)
-             - data-outcome        (key outcome text)
-             - data-link           (URL or anchor)
-             - The SVG illustration inside .project-image
-             - The visible text inside .project-body
-           Remove the "future-card" class to make it a normal card.
-           ===================================================== -->
       <article class="project-card future-card reveal" data-category="all">
         <div class="project-image">
           <div class="project-image-tag">
@@ -2511,7 +2375,7 @@ body.modal-open {
           <p class="project-cat">Add Your Next Engineering Project</p>
           <h3 class="project-title">Future Project</h3>
           <p class="project-overview">This is a reusable card template. Replace the placeholder with your next engineering project — its category, title, overview, contributions, technologies, outcome, and illustration.</p>
-          <p class="future-note">Edit the HTML comment inside the source to replace every field, or duplicate this card to add another project entry.</p>
+          <p class="future-note">Replace this card with the next engineering project, or duplicate it to add another project entry.</p>
         </div>
       </article>
 
@@ -2572,7 +2436,7 @@ body.modal-open {
 
       <div class="reveal">
         <div class="contact-channels">
-          <!-- TODO: Replace the LinkedIn URL below with your real profile URL -->
+
           <a class="contact-channel" href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
             <span class="contact-channel-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
@@ -2586,7 +2450,6 @@ body.modal-open {
             </span>
           </a>
 
-          <!-- TODO: Replace the Instagram URL below with your real profile URL -->
           <a class="contact-channel" href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile (opens in a new tab)">
             <span class="contact-channel-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
@@ -2600,7 +2463,6 @@ body.modal-open {
             </span>
           </a>
 
-          <!-- TODO: Replace the Facebook URL below with your real profile URL -->
           <a class="contact-channel" href="https://www.facebook.com/YOUR-FACEBOOK-USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile (opens in a new tab)">
             <span class="contact-channel-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.9h2.8L15.7 15h-2.3v7A10 10 0 0022 12z"/></svg>
@@ -2614,7 +2476,6 @@ body.modal-open {
             </span>
           </a>
 
-          <!-- TODO: Replace the email address below with your real email address -->
           <a class="contact-channel" href="mailto:YOUR-EMAIL@example.com" aria-label="Send an email">
             <span class="contact-channel-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
@@ -2630,7 +2491,6 @@ body.modal-open {
         </div>
       </div>
 
-      <!-- Contact form -->
       <form class="contact-form reveal" id="contactForm" novalidate>
         <div class="form-group" id="group-name">
           <label for="name">Name</label>
@@ -2670,9 +2530,6 @@ body.modal-open {
 
 </main>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
 <footer class="footer" id="footer">
   <div class="container">
     <div class="footer-bottom portfolio-footer-simple">
@@ -2682,14 +2539,10 @@ body.modal-open {
   </div>
 </footer>
 
-<!-- Back to top -->
 <button class="back-to-top" id="backToTop" aria-label="Back to top">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
-<!-- ============================================================
-     PROJECT MODAL
-     ============================================================ -->
 <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true" inert>
   <div class="modal" id="modal">
     <div class="modal-head">
@@ -2731,15 +2584,12 @@ body.modal-open {
 </div>
 
 <script>
-/* ============================================================
-   INTERACTIONS
-   ============================================================ */
+
 (function () {
   'use strict';
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* -------- Header scroll state + scroll progress -------- */
   const header = document.getElementById('header');
   const scrollProgress = document.getElementById('scrollProgress');
   const backToTop = document.getElementById('backToTop');
@@ -2759,13 +2609,11 @@ body.modal-open {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* -------- Back to top -------- */
   backToTop.addEventListener('click', function () {
     if (prefersReducedMotion) window.scrollTo(0, 0);
     else window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  /* -------- Mobile menu -------- */
   const navToggle = document.getElementById('navToggle');
   const mobileMenu = document.getElementById('mobileMenu');
   let menuOpen = false;
@@ -2793,7 +2641,6 @@ body.modal-open {
     if (window.innerWidth > 1100 && menuOpen) setMenu(false);
   });
 
-  /* -------- Active section highlighting -------- */
   const navLinkEls = document.querySelectorAll('.nav-links a');
   const sections = ['hero','skills','journey','projects','achievements','contact']
     .map(id => document.getElementById(id))
@@ -2813,7 +2660,6 @@ body.modal-open {
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
   sections.forEach(function (s) { sectionObserver.observe(s); });
 
-  /* -------- Reveal on scroll -------- */
   const revealEls = document.querySelectorAll('.reveal');
   if (prefersReducedMotion) {
     revealEls.forEach(function (el) { el.classList.add('visible'); });
@@ -2829,7 +2675,6 @@ body.modal-open {
     revealEls.forEach(function (el) { revealObserver.observe(el); });
   }
 
-  /* -------- Project filtering -------- */
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('#projectsLayout .project-card');
 
@@ -2851,7 +2696,6 @@ body.modal-open {
     });
   });
 
-  /* -------- Project modal -------- */
   const modalOverlay = document.getElementById('modalOverlay');
   const modal = document.getElementById('modal');
   const modalClose = document.getElementById('modalClose');
@@ -2924,7 +2768,6 @@ body.modal-open {
     if (e.target === modalOverlay) closeModal();
   });
 
-  /* Focus trap inside modal */
   modalOverlay.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') { closeModal(); return; }
     if (e.key !== 'Tab') return;
@@ -2939,14 +2782,12 @@ body.modal-open {
     }
   });
 
-  /* -------- Escape closes mobile menu -------- */
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape') return;
     if (menuOpen) setMenu(false);
     if (modalOverlay.classList.contains('open')) closeModal();
   });
 
-  /* -------- Smooth scroll for in-page links -------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
       const href = link.getAttribute('href');
@@ -2967,7 +2808,6 @@ body.modal-open {
     });
   });
 
-  /* -------- Contact form validation + mailto -------- */
   const form = document.getElementById('contactForm');
 
   function setError(group, hasError) {
@@ -2994,11 +2834,6 @@ body.modal-open {
 
     if (!valid) return;
 
-    /* ===========================================================
-       CONTACT FORM RECIPIENT
-       Replace the email address below with the address where you
-       wish to receive messages sent from this form.
-       =========================================================== */
     const recipient = 'YOUR-EMAIL@example.com';
 
     const subjectEncoded = encodeURIComponent('[Portfolio Contact] ' + subject);
@@ -3011,7 +2846,6 @@ body.modal-open {
     window.location.href = 'mailto:' + recipient + '?subject=' + subjectEncoded + '&body=' + bodyEncoded;
   });
 
-  /* Clear error state on input */
   ['name','email','subject','message'].forEach(function (id) {
     document.getElementById(id).addEventListener('input', function () {
       setError('group-' + id, false);
